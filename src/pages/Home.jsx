@@ -1,6 +1,7 @@
 import React from 'react'
+import useFetch from "../hooks/UseFetch"
 
-const Home = () => {
+const Home = ({url}) => {
   return (
     <div>Home</div>
   )
