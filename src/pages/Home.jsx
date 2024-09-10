@@ -1,7 +1,10 @@
+import Pokedex from "./Pokedex"
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <div>
+      <Pokedex/>
+    </div>
   )
 }
 
