@@ -1,9 +1,12 @@
+import Pokedex from "./pages/Pokedex"
 
 
 
 const App = () => {
   return (
-    <div>App</div>
+    <div>
+      <Pokedex/>
+    </div>
   )
 }
 
