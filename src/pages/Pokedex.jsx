@@ -1,15 +1,18 @@
 import { useEffect } from "react"
 import usefecth from "../hooks/UseFetch"
+import { useNavigate } from 'react-router-dom'
 
 const Pokedex = () => {
     const urlBase = "https://pokeapi.co/api/v2/pokemon?limit=100000&offset=0"
-    const [pokemon, getAllPokemos] = usefecth(urlBase)
+    const [pokemon] = usefecth(urlBase)
     
   useEffect(() => {
     getAllPokemons(urlBase)
 
   }, [urlBase]);
   
+  const navigate = useNavigate()
+
   const handleClick = () =>{
     navigate(`/pokedex/${pokemon.name}`)
   }
