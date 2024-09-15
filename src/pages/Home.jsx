@@ -6,6 +6,7 @@ const Home = () => {
 
   const handleSubmit = e =>{
     e.preventDefault()
+    trainerNameRef.current
   }
 
   return (
