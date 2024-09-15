@@ -2,7 +2,7 @@ import { useRef } from "react"
 
 const Home = () => {
 
-  useRef()
+  const trainerNameRef = useRef()
 
   const handleSubmit = e =>{
     e.preventDefault()
