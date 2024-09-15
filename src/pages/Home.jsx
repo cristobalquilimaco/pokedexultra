@@ -2,7 +2,7 @@
 const Home = () => {
 
   const handleSubmit = e =>{
-    
+    e.preventDefault()
   }
 
   return (
