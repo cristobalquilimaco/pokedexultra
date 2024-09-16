@@ -1,4 +1,5 @@
 import { useRef } from "react"
+import { setTrainerName } from "../store/slices/trainerName.Slice"
 
 const Home = () => {
 
@@ -6,7 +7,7 @@ const Home = () => {
 
   const handleSubmit = e =>{
     e.preventDefault()
-    trainerNameRef.current
+    setTrainerName(trainerNameRef.current.value)  
   }
 
   return (
