@@ -1,16 +1,20 @@
 import { useRef } from "react"
 import { setTrainerName } from "../store/slices/trainerName.Slice"
-import { useDispatch } from "react-redux"
+import { useDispatch, useSelector } from "react-redux"
 
 const Home = () => {
 
   const trainerNameRef = useRef()
+  const{ trainerName } = useSelector(states => states)
   const dispatch = useDispatch()
 
   const handleSubmit = e =>{
     e.preventDefault()
-    dispatch(setTrainerName(trainerNameRef.current.value.trim))
+    dispatch(setTrainerName(trainerNameRef.current.value.trim()))
   }
+
+  console.log(trainerName);
+  
 
   return (
     <div>
