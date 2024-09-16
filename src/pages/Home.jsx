@@ -7,7 +7,7 @@ const Home = () => {
 
   const trainerNameRef = useRef()
   const navigate = useNavigate()
-  const{ trainerName } = useSelector((states) => states)
+  const trainerName = useSelector((states) => states.trainerName)
   const dispatch = useDispatch()
 
   const handleSubmit = e =>{
