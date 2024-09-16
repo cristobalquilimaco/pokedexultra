@@ -10,7 +10,7 @@ const useFetch = (url) => {
 
 const getApi = () =>{
     axios.get(url)
-    .then(res => {setState(res.data)
+    .then(res => {setInfoApi(res.data)
     setHasError
     })
 
@@ -20,7 +20,7 @@ const getApi = () =>{
     
 }
 
-return[state, getData, hasError]
+return[infoApi, getApi, hasError]
 
 }
 
