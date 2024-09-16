@@ -9,7 +9,7 @@ const Home = () => {
 
   const handleSubmit = e =>{
     e.preventDefault()
-    dispatch(setTrainerName(trainerNameRef.current.value))
+    dispatch(setTrainerName(trainerNameRef.current.value.trim))
   }
 
   return (
