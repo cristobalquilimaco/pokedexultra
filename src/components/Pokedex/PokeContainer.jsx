@@ -1,5 +1,5 @@
 
-const PokeContainer = () => {
+const PokeContainer = ({ pokemons }) => {
   return (
     <div>PokeContainer</div>
   )
