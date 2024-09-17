@@ -1,7 +1,13 @@
 
 const PokeContainer = ({ pokemons }) => {
   return (
-    <div>PokeContainer</div>
+    <div>
+      {
+        pokemons?.map(pokemon => (
+          
+        ))
+      }
+    </div>
   )
 }
 
