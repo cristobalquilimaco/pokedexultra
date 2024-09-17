@@ -1,6 +1,7 @@
 import { useEffect } from "react"
 import useFetch from "../hooks/UseFetch"
 import { useSelector } from "react-redux"
+import PokeContainer from "../components/Pokedex/PokeContainer"
 
 const Pokedex = () => {
 
@@ -17,6 +18,7 @@ const Pokedex = () => {
   return (
     <div>Pokedex
         <h1>Bienvenido {trainerName} ! Busca tu pokemon</h1>
+        <PokeContainer pokemons={pokemons?.results}/>
     </div>
   )
 }
