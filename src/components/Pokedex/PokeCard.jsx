@@ -26,8 +26,19 @@ const Pokecard = ({ url }) => {
                         ))
                     }
                 </ul>
-               <img src={pokemon?.sprites.other.home.front_default} alt="" />
             </section>
+            <footer>
+                <ul>
+                    {
+                        pokemon?.stats.map(statsInfo =>(
+                            <li key={statsInfo.stat.url}>
+                                <span>{statsInfo.stat.name}</span>
+                                <span>{statsInfo.base_stat}</span>
+                            </li>
+                        ))
+                    }
+                </ul>
+            </footer>
         </div>
     );
 };
