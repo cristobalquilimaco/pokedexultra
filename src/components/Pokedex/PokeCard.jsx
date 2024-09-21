@@ -17,6 +17,13 @@ const Pokecard = ({ url }) => {
             </header>
             <section>
                 <h3>{pokemon?.name}</h3>
+                <ul>
+                    {
+                        pokemon?.types.map(typeInfo => (
+                            <li key={typeInfo.url}>{typeInfo.type.name}</li>
+                        ))
+                    }
+                </ul>
             </section>
         </div>
     );
