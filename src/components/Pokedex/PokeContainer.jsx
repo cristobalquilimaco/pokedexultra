@@ -1,5 +1,5 @@
-import Pokecard from "./Pokecard";
-import PropsType from "prop-types"
+import PropTypes from 'prop-types';
+import Pokecard from './Pokecard';
 
 const PokeContainer = ({ pokemons }) => {
   return (
@@ -14,9 +14,17 @@ const PokeContainer = ({ pokemons }) => {
   );
 };
 
-PokeContainer.PropsType = {
-  pokemons: PropsType.array.isRequired,
-  pokemon: PropsType.string.isRequired
-}
+PokeContainer.propTypes = {
+  pokemons: PropTypes.arrayOf(
+    PropTypes.shape({
+      url: PropTypes.string.isRequired
+    }).isRequired
+  ).isRequired
+};
+
+
+PokeContainer.defaultProps = {
+  pokemons: []
+};
 
 export default PokeContainer;
