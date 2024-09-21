@@ -15,6 +15,9 @@ const Pokecard = ({ url }) => {
             <header>
                 <img src={pokemon?.sprites?.other.home.front_default} alt="" />
             </header>
+            <section>
+                <h3>{pokemon?.name}</h3>
+            </section>
         </div>
     );
 };
