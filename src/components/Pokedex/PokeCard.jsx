@@ -7,7 +7,9 @@ const Pokecard = ({ url }) => {
 
     useEffect(() => {
         getPokemonById();
-    }, [getPokemonById]);
+    }, []);
+
+
 
 
     return (
@@ -24,6 +26,7 @@ const Pokecard = ({ url }) => {
                         ))
                     }
                 </ul>
+               <img src={pokemon?.sprites.other.home.front_default} alt="" />
             </section>
         </div>
     );
