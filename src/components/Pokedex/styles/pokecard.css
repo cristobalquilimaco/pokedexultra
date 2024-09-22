@@ -2,8 +2,12 @@
     border-radius: 8px; /* Bordes redondeados */
     padding: 15px; /* Espaciado interno */
     color: #fff; /* Color del texto */
-    margin: 10px; /* Espaciado externo */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 500px;
 }
 
 /* Tipos de Pokémon y sus colores con degradados */
@@ -169,7 +173,7 @@
 
 
 .poke_card_img{
-    width: 400px;
+    width: 300px;
 }
 
 .pokecard_name{

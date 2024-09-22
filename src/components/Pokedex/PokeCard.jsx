@@ -10,7 +10,7 @@ const Pokecard = ({ url }) => {
         getPokemonById();
     }, [getPokemonById]);
 
-    // Determina el fondo basado en el primer tipo del Pokémon
+
     const backgroundClass = pokemon?.types[0]?.type.name ? `type-${pokemon.types[0].type.name}` : '';
     const darkBackgroundClass = pokemon?.types[0]?.type.name ? `type-${pokemon.types[0].type.name}-dark` : '';
 
@@ -26,7 +26,6 @@ const Pokecard = ({ url }) => {
                         pokemon?.types.map(typeInfo => (
                             <li
                                 key={typeInfo.type.url}
-                                 // Aplica el fondo oscuro aquí
                             >
                                 {typeInfo.type.name}
                             </li>
