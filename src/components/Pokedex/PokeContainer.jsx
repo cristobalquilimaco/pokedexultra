@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import Pokecard from './Pokecard';
+import "./styles/pokeContainer.css"
 
 const PokeContainer = ({ pokemons}) => {
   return (
