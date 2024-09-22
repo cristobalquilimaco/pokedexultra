@@ -7,10 +7,7 @@ const Pokecard = ({ url }) => {
 
     useEffect(() => {
         getPokemonById();
-    }, [getPokemonById]);
-
-
-
+    }, );
 
     return (
         <div>
