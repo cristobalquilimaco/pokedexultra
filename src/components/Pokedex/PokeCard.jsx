@@ -7,7 +7,7 @@ const Pokecard = ({ url }) => {
 
     useEffect(() => {
         getPokemonById();
-    }, []);
+    }, [getPokemonById]);
 
 
 
@@ -22,7 +22,7 @@ const Pokecard = ({ url }) => {
                 <ul>
                     {
                         pokemon?.types.map(typeInfo => (
-                            <li key={typeInfo.url}>{typeInfo.type.name}</li>
+                            <li key={typeInfo.type.url}>{typeInfo.type.name}</li>
                         ))
                     }
                 </ul>
@@ -33,7 +33,7 @@ const Pokecard = ({ url }) => {
                         pokemon?.stats.map(statsInfo =>(
                             <li key={statsInfo.stat.url}>
                                 <span>{statsInfo.stat.name}</span>
-                                <span>{statsInfo.base_stat}</span>
+                                <span>{statsInfo.stat.base_stat}</span>
                             </li>
                         ))
                     }

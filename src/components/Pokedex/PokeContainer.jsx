@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import Pokecard from './Pokecard';
 
-const PokeContainer = ({ pokemons }) => {
+const PokeContainer = ({ pokemons}) => {
   return (
     <div>
       {pokemons.map(pokemon => (
@@ -20,11 +20,6 @@ PokeContainer.propTypes = {
       url: PropTypes.string.isRequired
     }).isRequired
   ).isRequired
-};
-
-
-PokeContainer.defaultProps = {
-  pokemons: []
 };
 
 export default PokeContainer;
