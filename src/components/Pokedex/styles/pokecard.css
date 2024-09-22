@@ -1,0 +1,182 @@
+.pokecard {
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 15px; /* Espaciado interno */
+    color: #fff; /* Color del texto */
+    margin: 10px; /* Espaciado externo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+/* Tipos de Pokémon y sus colores con degradados */
+
+.type-normal {
+    background: linear-gradient(to bottom, #A8A878, #D0D0B0);
+}
+
+.type-fire {
+    background: linear-gradient(to bottom, #F08030, #F4A460);
+}
+
+.type-water {
+    background: linear-gradient(to bottom, #6890F0, #A4C8E1);
+}
+
+.type-electric {
+    background: linear-gradient(to bottom, #F8D030, #F0E68C);
+}
+
+.type-grass {
+    background: linear-gradient(to bottom, #78C850, #A8D8A0);
+}
+
+.type-ice {
+    background: linear-gradient(to bottom, #98D8D8, #B0E0E6);
+}
+
+.type-fighting {
+    background: linear-gradient(to bottom, #C03028, #FF6347);
+}
+
+.type-poison {
+    background: linear-gradient(to bottom, #A040A0, #DDA0DD);
+}
+
+.type-ground {
+    background: linear-gradient(to bottom, #E0C068, #D2B48C);
+}
+
+.type-flying {
+    background: linear-gradient(to bottom, #A7B9E0, #B0C4DE);
+}
+
+.type-psychic {
+    background: linear-gradient(to bottom, #F85888, #FFB6C1);
+}
+
+.type-bug {
+    background: linear-gradient(to bottom, #A8B820, #B2D72C);
+}
+
+.type-rock {
+    background: linear-gradient(to bottom, #B8A038, #D2B48C);
+}
+
+.type-ghost {
+    background: linear-gradient(to bottom, #705898, #8A6E9D);
+}
+
+.type-dragon {
+    background: linear-gradient(to bottom, #7038F8, #A5A6EA);
+}
+
+.type-dark {
+    background: linear-gradient(to bottom, #705848, #8B8682);
+}
+
+.type-fairy {
+    background: linear-gradient(to bottom, #F4B1F4, #FFB3DE);
+}
+
+/* Tipos especiales */
+.type-steel {
+    background: linear-gradient(to bottom, #B8B8D0, #C0C0C0);
+}
+
+.type-unknown {
+    background: linear-gradient(to bottom, #000000, #555555);
+}
+
+
+/* NAME POKEMON */
+
+/* Tipos de Pokémon y sus colores oscuros */
+
+.type-normal-dark {
+    background: linear-gradient(to bottom, #A8A878, #7A7A5C); /* gris más oscuro */
+}
+
+.type-fire-dark {
+    background: linear-gradient(to bottom, #F08030, #C04E22); /* naranja más oscuro */
+}
+
+.type-water-dark {
+    background: linear-gradient(to bottom, #6890F0, #3B6BB6); /* azul más oscuro */
+}
+
+.type-electric-dark {
+    background: linear-gradient(to bottom, #F8D030, #C0A330); /* amarillo más oscuro */
+}
+
+.type-grass-dark {
+    background: linear-gradient(to bottom, #78C850, #5DAA3D); /* verde más oscuro */
+}
+
+.type-ice-dark {
+    background: linear-gradient(to bottom, #98D8D8, #66B3B3); /* celeste más oscuro */
+}
+
+.type-fighting-dark {
+    background: linear-gradient(to bottom, #C03028, #8C2021); /* rojo oscuro más */
+}
+
+.type-poison-dark {
+    background: linear-gradient(to bottom, #A040A0, #6A2D6A); /* púrpura más oscuro */
+}
+
+.type-ground-dark {
+    background: linear-gradient(to bottom, #E0C068, #BBAA4D); /* marrón más oscuro */
+}
+
+.type-flying-dark {
+    background: linear-gradient(to bottom, #A7B9E0, #7A9DB6); /* azul claro más oscuro */
+}
+
+.type-psychic-dark {
+    background: linear-gradient(to bottom, #F85888, #C14B5B); /* rosa más oscuro */
+}
+
+.type-bug-dark {
+    background: linear-gradient(to bottom, #A8B820, #7C9A15); /* verde oscuro más */
+}
+
+.type-rock-dark {
+    background: linear-gradient(to bottom, #B8A038, #8F6F28); /* marrón más oscuro */
+}
+
+.type-ghost-dark {
+    background: linear-gradient(to bottom, #705898, #4D3E6D); /* violeta más oscuro */
+}
+
+.type-dragon-dark {
+    background: linear-gradient(to bottom, #7038F8, #482A7A); /* azul oscuro más */
+}
+
+.type-dark-dark {
+    background: linear-gradient(to bottom, #705848, #4A4A4A); /* gris oscuro más */
+}
+
+.type-fairy-dark {
+    background: linear-gradient(to bottom, #F4B1F4, #DFA4D5); /* rosa claro más oscuro */
+}
+
+/* Tipos especiales oscuros */
+.type-steel-dark {
+    background: linear-gradient(to bottom, #B8B8D0, #A2A2B5); /* gris metálico más oscuro */
+}
+
+.type-unknown-dark {
+    background: linear-gradient(to bottom, #000000, #333333); /* negro más oscuro */
+}
+
+
+.poke_card_img{
+    width: 400px;
+}
+
+.pokecard_name{
+    max-width: 200px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    border-radius: 0 30px 30px 0;
+}
