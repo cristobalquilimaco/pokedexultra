@@ -16,7 +16,7 @@ const Pokecard = ({ url }) => {
 
     return (
         <div className={`pokecard ${backgroundClass}`}> {/* Aplica el fondo aquí */}
-            <header>
+            <header className="poke_header">
                 <img className="poke_card_img" src={pokemon?.sprites?.other.home.front_default} alt={pokemon?.name} />
             </header>
             <section>

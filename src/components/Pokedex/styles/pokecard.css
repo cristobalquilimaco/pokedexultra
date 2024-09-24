@@ -176,7 +176,7 @@
 }
 
 .pokecard_name{
-    max-width: 200px;
+    max-width: 150px;
     height: 40px;
     display: flex;
     align-items: center;
