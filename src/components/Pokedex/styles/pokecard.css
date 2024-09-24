@@ -6,7 +6,12 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 500px;
+    height: 480px;
+}
+
+.pokecard:hover {
+    cursor: pointer;
+    scale: 1.03;
 }
 
 /* Tipos de Pokémon y sus colores con degradados */
@@ -191,3 +196,6 @@
     justify-content: center;
 }
 
+.name_text{
+    margin-left: 1em;
+}

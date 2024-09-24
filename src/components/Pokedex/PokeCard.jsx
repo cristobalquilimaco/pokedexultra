@@ -20,7 +20,10 @@ const Pokecard = ({ url }) => {
                 <img className="poke_card_img" src={pokemon?.sprites?.other.home.front_default} alt={pokemon?.name} />
             </header>
             <section>
-                <h3 className={`pokecard_name ${darkBackgroundClass}`}>{pokemon?.name}</h3>
+                <article className={`pokecard_name ${darkBackgroundClass}`}>
+                <h3 className="name_text" >{pokemon?.name}</h3>
+                </article>
+                
                 <ul>
                     {
                         pokemon?.types.map(typeInfo => (
