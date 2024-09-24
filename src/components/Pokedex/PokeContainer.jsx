@@ -20,7 +20,7 @@ const PokeContainer = ({ pokemons }) => {
   const totalPages = Math.ceil(pokemons.length / itemsPerPage);
 
   return (
-    <div>
+    <div className='principal_container'>
       <div className='card_container'>
         {currentPokemons.map(pokemon => (
           <Pokecard

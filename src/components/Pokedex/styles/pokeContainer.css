@@ -1,11 +1,14 @@
-.card_container{
+.principal_container{
     width: 70%;
+}
+
+.card_container{
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     gap: 1em;
     align-items: center;
     justify-content: center;
-
 }
 
 /* pagination */
