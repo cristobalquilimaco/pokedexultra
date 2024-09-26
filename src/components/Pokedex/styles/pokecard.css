@@ -12,15 +12,21 @@
     
 }
 
+
+
 .pokecard:hover {
     cursor: pointer;
     scale: 1.03;
+    background: rgb(255, 255, 255);
+    border: 0px solid rgb(200, 200, 200);
+    background-color: #ca0505;
+    transition: all .5s;
 }
 
 /* Tipos de Pokémon y sus colores con degradados */
 
 .type-normal {
-    background: linear-gradient(to bottom, #A8A878, #D0D0B0);
+    background: linear-gradient(to bottom, #72724d, #caca83);
     
 }
 
