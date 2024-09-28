@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import useFetch from "../../hooks/UseFetch";
 import PropTypes from 'prop-types';
 import './styles/pokecard.css'; // Importa el archivo CSS
+import pokebol from '../../assets/images/pokebol.png';
 
 const Pokecard = ({ url }) => {
     const [pokemon, getPokemonById] = useFetch(url);
@@ -18,6 +19,7 @@ const Pokecard = ({ url }) => {
         <div className={`pokecard  ${backgroundClass}`}> {/* Aplica el fondo aquí */}
             <header className="poke_header">
                 <img className="poke_card_img" src={pokemon?.sprites?.other.home.front_default} alt={pokemon?.name} />
+                <img className="pokebol_img" src={pokebol} alt="" />
             </header>
             <section>
                 <article className={`pokecard_name ${darkBackgroundClass}`}>
