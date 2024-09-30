@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom"
 import Home from "./pages/Home"
 import Pokedex from "./pages/Pokedex"
 import ProtectedRoutes from "./pages/ProtectedRoutes"
+import "../src/app.css"
 
 const App = () => {
   return (
