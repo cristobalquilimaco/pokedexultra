@@ -26,7 +26,7 @@ const Pokecard = ({ url }) => {
                 <h3 className="name_text" >{pokemon?.name}</h3>
                 </article>
                 
-                <ul>
+                <ul className="pokemon_list_type">
                     {
                         pokemon?.types.map(typeInfo => (
                             <li
