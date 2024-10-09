@@ -3,6 +3,7 @@ import useFetch from "../../hooks/UseFetch";
 import PropTypes from 'prop-types';
 import './styles/pokecard.css'; // Importa el archivo CSS
 import pokebol from '../../assets/images/pokebol.png';
+import { useNavigate } from "react-router-dom";
 
 const Pokecard = ({ url }) => {
     const [pokemon, getPokemonById] = useFetch(url);
@@ -10,6 +11,12 @@ const Pokecard = ({ url }) => {
     useEffect(() => {
         getPokemonById();
     }, [getPokemonById]);
+
+    const navigate = useNavigate()
+
+    const handleNavigate = () =>{
+        navigate(`/pokedex/${pokemon.name}`)
+    }
 
 
     const backgroundClass = pokemon?.types[0]?.type.name ? `type-${pokemon.types[0].type.name}` : '';

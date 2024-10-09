@@ -1,5 +1,3 @@
-
-
 const PokedexName = () => {
   return (
     <div>PokedexName</div>
