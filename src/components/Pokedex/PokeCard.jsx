@@ -23,7 +23,7 @@ const Pokecard = ({ url }) => {
     const darkBackgroundClass = pokemon?.types[0]?.type.name ? `type-${pokemon.types[0].type.name}-dark` : '';
 
     return (
-        <div className={`pokecard  ${backgroundClass}`}> {/* Aplica el fondo aquí */}
+        <div onClick={handleNavigate}  className={`pokecard  ${backgroundClass}`}> {/* Aplica el fondo aquí */}
             <header className="poke_header">
                 <img className="poke_card_img" src={pokemon?.sprites?.other.home.front_default} alt={pokemon?.name} />
                 <img className="pokebol_img" src={pokebol} alt="" />
