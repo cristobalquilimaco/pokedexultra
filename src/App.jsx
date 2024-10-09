@@ -11,6 +11,7 @@ const App = () => {
         <Route path="/" element={<Home/>}/>
           <Route element={<ProtectedRoutes/>}>
             <Route path="/pokedex" element={<Pokedex/>}/>
+            <Route path="/pokedex/:id" element={</>}/>
           </Route>
       </Routes>
     </div>

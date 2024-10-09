@@ -234,7 +234,7 @@ box-shadow: inset -50px 50px 98px #915291,
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    max-width: 250px;
+    gap: 3em;
 }
 
 .pokemon_stats{
