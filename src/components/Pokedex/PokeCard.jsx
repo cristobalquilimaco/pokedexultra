@@ -38,7 +38,7 @@ const Pokecard = ({ url }) => {
                     }
                 </ul>
             </section>
-            <footer>
+            <footer className="pokemon__footer">
                 <ul className="pokemon_stats">
                     {
                         pokemon?.stats.map(statsInfo => (

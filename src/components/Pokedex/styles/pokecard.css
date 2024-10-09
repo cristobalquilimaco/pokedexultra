@@ -3,6 +3,7 @@
     color: #fff; /* Color del texto */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
     max-width: 250px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -228,15 +229,21 @@ box-shadow: inset -50px 50px 98px #915291,
     gap: 2em;
 }
 
-.stats__pokemon{
+.stat__pokemon{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    max-width: 250px;
 }
 
 .pokemon_stats{
     display: flex;
     flex-direction: column;
+    max-width: 250px;
+}
+
+.pokemon__footer{
+    display: flex;
     width: 100%;
 }
