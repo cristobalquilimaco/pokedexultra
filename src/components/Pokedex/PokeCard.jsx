@@ -39,10 +39,10 @@ const Pokecard = ({ url }) => {
                 </ul>
             </section>
             <footer>
-                <ul>
+                <ul className="pokemon_stats">
                     {
                         pokemon?.stats.map(statsInfo => (
-                            <li className="stats__pokemon" key={statsInfo.stat.url}>
+                            <li className="stat__pokemon" key={statsInfo.stat.url}>
                                 <span>{statsInfo.stat.name}</span>
                                 <span>{statsInfo.base_stat}</span>
                             </li>
