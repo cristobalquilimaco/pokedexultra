@@ -12,15 +12,11 @@ const PokedexName = () => {
     getPokemonByName();
   }, [name, getPokemonByName]);
 
-  // Maneja el caso en que pokemon es undefined
-  if (!pokemon) {
-    return <p>Cargando...</p>;
-  }
 
   return (
     <div>
-      <img src={pokemon.sprites.other["official-artwork"].front_default} alt={pokemon.name} />
-      <h1>{pokemon.name}</h1>
+      <img src={pokemon?.sprites.other["official-artwork"].front_default} alt={pokemon?.name} />
+      <h1>{pokemon?.name}</h1>
     </div>
   );
 };
