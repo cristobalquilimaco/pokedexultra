@@ -10,8 +10,9 @@ const useFetch = (url) => {
 
 const getApi = () =>{
     axios.get(url)
-    .then(res => {setInfoApi(res.data)
-    setHasError
+    .then(res => {
+        setInfoApi(res.data)
+        setHasError(false)
     })
 
     .catch(err => {console.log(err)
@@ -21,7 +22,6 @@ const getApi = () =>{
 }
 
 return[infoApi, getApi, hasError]
-
 }
 
 export default useFetch
