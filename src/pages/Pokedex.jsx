@@ -11,10 +11,13 @@ const Pokedex = () => {
   const trainerName = useSelector(states => states.trainerName);
   const url = "https://pokeapi.co/api/v2/pokemon?limit=100&offset=0";
   const [pokemons, getAllPokemons] = useFetch(url);
+  const urlTypes = "https://pokeapi.co/api/v2/type"
+  const [types, getAllPokemonsTypes] = useFetch(urlTypes);
 
   useEffect(() => {
     getAllPokemons();
-  }, [getAllPokemons]);
+    getAllPokemonsTypes();
+  }, [getAllPokemons, getAllPokemonsTypes]);
 
   const searchPokemon = useRef()
   const navigate = useNavigate()
@@ -25,14 +28,17 @@ const Pokedex = () => {
     navigate(`/pokedex/${inputValue}`)
   }
 
+
   return (
     <div>
       <h1>Bienvenido {trainerName}! Busca tu Pokémon</h1>
       <form onSubmit={handleSubmit}>
         <input ref={searchPokemon} type="text" name="" id="" />
         <button>Search</button>
+      <select name="" id="">
+        <option value="all-pokemons">All Pokemons</option>
+      </select>
       </form>
-      <select name="" id="">Pokemon</select>
       <section className="poke_container_class">
       <PokeContainer pokemons={pokemons?.results || []} />
       </section>
