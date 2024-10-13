@@ -15,7 +15,8 @@ const getApi = () =>{
         setHasError(false)
     })
 
-    .catch(err => {console.log(err)
+    .catch(err => {
+    console.log(err)
     setHasError(true)
     })
     
