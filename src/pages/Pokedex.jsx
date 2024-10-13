@@ -16,7 +16,9 @@ const Pokedex = () => {
   return (
     <div>
       <h1>Bienvenido {trainerName}! Busca tu Pokémon</h1>
-      {/* Asegúrate de que pokemons sea un objeto con results como un array */}
+      <form action="">
+        <input type="text" name="" id="" />
+      </form>
       <section className="poke_container_class">
       <PokeContainer pokemons={pokemons?.results || []} />
       </section>
