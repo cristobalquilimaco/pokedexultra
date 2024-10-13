@@ -15,9 +15,17 @@ const PokedexName = () => {
 
   return (
     <div>
+      {
+        hasError
+        ? <h1>☠️ The pokemon {name} doesn´t exist</h1>
+        : (
+          <>
       <img src={pokemon?.sprites?.other.home.front_default} alt={pokemon?.name} />
       <h1>{pokemon?.name}</h1>
-    </div>
+      </>
+    )
+  }
+      </div>
   );
 };
 
