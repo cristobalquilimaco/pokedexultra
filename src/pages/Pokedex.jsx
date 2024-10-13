@@ -37,6 +37,11 @@ const Pokedex = () => {
         <button>Search</button>
       <select name="" id="">
         <option value="all-pokemons">All Pokemons</option>
+        {
+          types?.results.map(typeInfo => (
+            <option key={typeInfo.url} value={typeInfo.url}>{typeInfo.name}</option>
+          ))
+        }
       </select>
       </form>
       <section className="poke_container_class">
