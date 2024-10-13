@@ -22,7 +22,7 @@ const getApi = () =>{
     
 }
 
-return[infoApi, getApi, hasError]
+return[infoApi, getApi, hasError, setInfoApi]
 }
 
 export default useFetch
