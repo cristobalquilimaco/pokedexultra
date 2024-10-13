@@ -32,6 +32,7 @@ const Pokedex = () => {
         <input ref={searchPokemon} type="text" name="" id="" />
         <button>Search</button>
       </form>
+      <select name="" id="">Pokemon</select>
       <section className="poke_container_class">
       <PokeContainer pokemons={pokemons?.results || []} />
       </section>
