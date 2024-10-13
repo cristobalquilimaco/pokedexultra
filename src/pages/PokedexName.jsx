@@ -15,7 +15,7 @@ const PokedexName = () => {
 
   return (
     <div>
-      <img src={pokemon?.sprites.other["official-artwork"].front_default} alt={pokemon?.name} />
+      <img src={pokemon?.sprites?.other.home.front_default} alt={pokemon?.name} />
       <h1>{pokemon?.name}</h1>
     </div>
   );

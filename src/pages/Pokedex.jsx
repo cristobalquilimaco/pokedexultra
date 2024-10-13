@@ -1,10 +1,13 @@
-import { useEffect } from "react";
+import { useEffect, useRef} from "react";
 import useFetch from "../hooks/UseFetch";
 import { useSelector } from "react-redux";
 import PokeContainer from "../components/Pokedex/PokeContainer";
 import "./styles/pokedex.css"
+import { useNavigate } from "react-router-dom";
 
 const Pokedex = () => {
+
+
   const trainerName = useSelector(states => states.trainerName);
   const url = "https://pokeapi.co/api/v2/pokemon?limit=100&offset=0";
   const [pokemons, getAllPokemons] = useFetch(url);
@@ -13,11 +16,21 @@ const Pokedex = () => {
     getAllPokemons();
   }, []);
 
+  const searchPokemon = useRef()
+  const navigate = useNavigate()
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    const inputValue = searchPokemon.current.value.trim().toLowerCase()
+    navigate(`/pokedex/${inputValue}`)
+  }
+
   return (
     <div>
       <h1>Bienvenido {trainerName}! Busca tu Pokémon</h1>
-      <form action="">
-        <input type="text" name="" id="" />
+      <form onSubmit={handleSubmit}>
+        <input ref={searchPokemon} type="text" name="" id="" />
+        <button>Search</button>
       </form>
       <section className="poke_container_class">
       <PokeContainer pokemons={pokemons?.results || []} />
