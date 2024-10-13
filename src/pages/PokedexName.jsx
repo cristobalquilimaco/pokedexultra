@@ -1,6 +1,11 @@
+import { useParams } from "react-router-dom"
+
 const PokedexName = () => {
+
+  const { name } = useParams()
+
   return (
-    <div>PokedexName</div>
+    <div>{name}</div>
   )
 }
 
