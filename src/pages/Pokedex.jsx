@@ -14,7 +14,7 @@ const Pokedex = () => {
 
   useEffect(() => {
     getAllPokemons();
-  }, []);
+  }, [getAllPokemons]);
 
   const searchPokemon = useRef()
   const navigate = useNavigate()
