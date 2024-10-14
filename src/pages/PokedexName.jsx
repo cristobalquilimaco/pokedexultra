@@ -19,21 +19,8 @@ const PokedexName = () => {
     };
 
     getPokemonByName();
-    fetchSpeciesData(); // Llamar aquí también
+    fetchSpeciesData();
   }, [name, getPokemonByName]);
-
-  useEffect(() => {
-    if (pokemon) {
-      const fetchSpeciesData = async () => {
-        const speciesUrl = `https://pokeapi.co/api/v2/pokemon-species/${pokemon.name}`;
-        const response = await fetch(speciesUrl);
-        const data = await response.json();
-        setSpeciesData(data);
-      };
-
-      fetchSpeciesData();
-    }
-  }, [pokemon]);
 
   return (
     <div>
@@ -45,12 +32,18 @@ const PokedexName = () => {
           <h1>{pokemon?.name}</h1>
           {speciesData && (
             <div>
-              <h2>Flavor Text:</h2>
-              {speciesData.flavor_text_entries.slice(1, 3).map((entry, index) => (
-                <p key={index}>
-                  {entry.flavor_text.replace(/\f/g, ' ')} {/* Remover caracteres de control */}
-                </p>
-              ))}
+              <h2>Description:</h2>
+              {speciesData.flavor_text_entries
+                .reduce((acc, entry) => {
+                  if (!acc.includes(entry.flavor_text.replace(/\f/g, ' '))) {
+                    acc.push(entry.flavor_text.replace(/\f/g, ' '));
+                  }
+                  return acc;
+                }, [])
+                .slice(0, 5) // Limitar a 2 textos únicos
+                .map((text, index) => (
+                  <p key={index}>{text}</p>
+                ))}
             </div>
           )}
         </>
