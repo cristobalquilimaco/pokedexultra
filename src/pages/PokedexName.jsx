@@ -23,7 +23,7 @@ const PokedexName = () => {
   }, [name, getPokemonByName]);
 
   return (
-    <div>
+    <div className="pokedex__name">
       {hasError ? (
         <h1>☠️ The Pokémon <span>{name}</span> doesnt exist</h1>
       ) : (
