@@ -5,6 +5,17 @@ const PokedexNameDescription = ({ speciesData, pokemon }) => {
     <div>
       <img src={pokemon?.sprites?.other?.home?.front_default} alt={pokemon?.name} />
       <h1>{pokemon?.name}</h1>
+      <ul className="pokemon_list_type">
+                    {
+                        pokemon?.types.map(typeInfo => (
+                            <li
+                                key={typeInfo.type.url}
+                            >
+                                {typeInfo.type.name}
+                            </li>
+                        ))
+                    }
+                </ul>
       {speciesData && (
         <div>
           <h2>Description:</h2>
@@ -21,6 +32,9 @@ const PokedexNameDescription = ({ speciesData, pokemon }) => {
             ))}
         </div>
       )}
+    <div>
+
+    </div>
     </div>
   );
 };
@@ -35,6 +49,7 @@ PokedexNameDescription.propTypes = {
   }),
   pokemon: PropTypes.shape({
     name: PropTypes.string.isRequired,
+    types: PropTypes.string.isRequired,
     sprites: PropTypes.shape({
       other: PropTypes.shape({
         home: PropTypes.shape({
