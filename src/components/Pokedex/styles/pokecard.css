@@ -143,11 +143,23 @@
 }
 
 .type-rock {
-    background: linear-gradient(to bottom, #B8A038, #D2B48C);
+    background: linear-gradient(to bottom, 
+    #BFB6AE, 
+    #40312C, 
+    #73605A, 
+    #A6948D, 
+    #8f8f8f
+);
 }
 
 .type-ghost {
-    background: linear-gradient(to bottom, #705898, #8A6E9D);
+    background: linear-gradient(to bottom, 
+    #0A0B0D, 
+    #1F2326, 
+    #617477, 
+    #515251, 
+    #585858
+);
 }
 
 .type-dragon {
