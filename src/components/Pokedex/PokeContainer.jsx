@@ -1,8 +1,9 @@
 
 import PropTypes from 'prop-types';
-import Pokecard from './Pokecard';
+
 import "./styles/pokeContainer.css"
 import { useState } from 'react';
+import Pokecard from './PokeCard';
 
 const PokeContainer = ({ pokemons }) => {
   const [currentPage, setCurrentPage] = useState(1);

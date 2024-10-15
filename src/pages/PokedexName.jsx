@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import useFetch from "../hooks/UseFetch";
 import { useEffect, useState } from "react";
 import ErrorPage from "./ErrorPage";
+import "../components/Pokedex/PokeCard"
 import PokedexNameDescription from "../components/PokedexName.jsx/PokedexNameDescription";
 
 const PokedexName = () => {
