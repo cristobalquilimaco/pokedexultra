@@ -163,7 +163,13 @@
 }
 
 .type-dragon {
-    background: linear-gradient(to bottom, #7038F8, #A5A6EA);
+        background: linear-gradient(to bottom, 
+        #0554F2, 
+        #0442BF, 
+        #03318C, 
+        #021F59, 
+        #0D0D0D
+    );
 }
 
 .type-dark {
