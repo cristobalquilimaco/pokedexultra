@@ -123,7 +123,13 @@
 }
 
 .type-psychic {
-    background: linear-gradient(to bottom, #F85888, #FFB6C1);
+    background: linear-gradient(to bottom, 
+    #F972AF, 
+    #FF97CB, 
+    #F5D4EC, 
+    #d7b0fa, 
+    #BCB5DF
+);
 }
 
 .type-bug {
