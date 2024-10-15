@@ -34,6 +34,21 @@ const PokedexNameDescription = ({ speciesData, pokemon }) => {
             ))}
         </div>
       )}
+      <ul>
+      {
+        pokemon?.stats.map(statsInfo=>(
+            <li key={statsInfo}><span>{statsInfo.stat.name}</span>
+                                <span>{statsInfo.base_stat}</span></li>
+        ))
+      }
+      </ul>
+      <ul>
+        {
+            pokemon?.moves.map(movesInfo =>(
+                <li key={}></li>
+            ))
+        }
+      </ul>
     </div>
   );
 };
