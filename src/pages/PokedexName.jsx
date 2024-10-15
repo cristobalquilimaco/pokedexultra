@@ -40,7 +40,7 @@ const PokedexName = () => {
                   }
                   return acc;
                 }, [])
-                .slice(0, 5) // Limitar a 2 textos únicos
+                .slice(0, 5) 
                 .map((text, index) => (
                   <p key={index}>{text}</p>
                 ))}
