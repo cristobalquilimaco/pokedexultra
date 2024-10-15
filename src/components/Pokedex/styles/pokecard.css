@@ -173,7 +173,13 @@
 }
 
 .type-dark {
-    background: linear-gradient(to bottom, #705848, #8B8682);
+    background: linear-gradient(to bottom, 
+    #252252, 
+    #665DDE, 
+    #433D91, 
+    #49429E, 
+    #373278
+);
 }
 
 .type-fairy {
