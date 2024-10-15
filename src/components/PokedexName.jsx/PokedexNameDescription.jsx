@@ -2,11 +2,10 @@ import PropTypes from 'prop-types';
 import "./styles/PokedexNameDescription.css"; // Asegúrate de tener este archivo para los estilos
 
 const PokedexNameDescription = ({ speciesData, pokemon }) => {
-  // Verifica si el Pokémon es de tipo "Grass"
-  const isGrassType = pokemon?.types?.some(typeInfo => typeInfo.type.name === 'grass');
+  const primaryType = pokemon?.types[0]?.type.name;
 
   return (
-    <div className={`pokedex-container ${isGrassType ? 'grass-background' : ''}`}>
+    <div className={`pokedex-container ${primaryType ? `${primaryType}-background` : ''}`}>
       {pokemon?.sprites?.other?.home?.front_default ? (
         <img src={pokemon.sprites.other.home.front_default} alt={pokemon.name} />
       ) : (

@@ -15,3 +15,198 @@
     height: 100vh; /* O el tamaño que necesites */
     color: white; /* Color del texto */
 }
+
+.fire-background {
+    background: linear-gradient(to bottom, 
+        #FFB100, 
+        #FFDB00, 
+        #FF8100, 
+        #FF4500, 
+        #FF0800
+    );
+    height: 100vh; /* O el tamaño que necesites */
+    color: white; /* Color del texto */
+}
+
+.dark-background {
+    background: linear-gradient(to bottom, 
+        #252252, 
+        #665DDE, 
+        #433D91, 
+        #49429E, 
+        #373278
+    );
+    height: 100vh; /* O el tamaño que necesites */
+    color: white; /* Color del texto */
+}
+
+.normal-background {
+    background: linear-gradient(to bottom, 
+        #FFA24A, 
+        #803E00, 
+        #FF7C00, 
+        #805226, 
+        #CC6300
+    );
+    height: 100vh; /* O el tamaño que necesites */
+    color: black; /* Color del texto */
+}
+
+.fighting-background {
+    background: linear-gradient(to bottom, 
+        #6E0B1F, 
+        #F0607D, 
+        #ED1842, 
+        #6E2C39, 
+        #BD1234
+    );
+    height: 100vh; /* O el tamaño que necesites */
+    color: white; /* Color del texto */
+}
+
+
+.poison-background {
+    background: linear-gradient(to bottom, 
+        #B679F2, 
+        #7229D9, 
+        #2E038C, 
+        #1D0259, 
+        #090126
+    );
+    height: 100vh;
+    color: white;
+}
+
+.ground-background {
+    background: linear-gradient(to bottom, 
+        #CCA700, 
+        #80784F, 
+        #FFF0AC, 
+        #806900, 
+        #FFD100
+    );
+    height: 100vh;
+    color: white;
+}
+
+.rock-background {
+    background: linear-gradient(to bottom, 
+        #BFB6AE, 
+        #40312C, 
+        #73605A, 
+        #A6948D, 
+        #F2F2F2
+    );
+    height: 100vh;
+    color: white;
+}
+
+.bug-background {
+    background: linear-gradient(to bottom, 
+        #375936, 
+        #155902, 
+        #588C49, 
+        #488C03, 
+        #97BF04
+    );
+    height: 100vh;
+    color: white;
+}
+
+.ghost-background {
+    background: linear-gradient(to bottom, 
+        #0A0B0D, 
+        #1F2326, 
+        #667173, 
+        #D7D9D7, 
+        #A2A6A1
+    );
+    height: 100vh;
+    color: white;
+}
+
+.steel-background {
+    background: linear-gradient(to bottom, 
+        #A4A698, 
+        #8C8979, 
+        #595348, 
+        #262626, 
+        #0D0D0D
+    );
+    height: 100vh;
+    color: white;
+}
+
+.water-background {
+    background: linear-gradient(to bottom, 
+        #012340, 
+        #03588C, 
+        #049DD9, 
+        #049DBF, 
+        #04C4D9
+    );
+    height: 100vh;
+    color: white;
+}
+
+
+.electric-background {
+    background: linear-gradient(to bottom, 
+        #FFDA00, 
+        #E6C200, 
+        #FFD500, 
+        #C5A300, 
+        #FFD000
+    );
+    height: 100vh;
+    color: white;
+}
+
+.psychic-background {
+    background: linear-gradient(to bottom, 
+        #F972AF, 
+        #FF97CB, 
+        #F5D4EC, 
+        #BB87EA, 
+        #BCB5DF
+    );
+    height: 100vh;
+    color: white;
+}
+
+.ice-background {
+    background: linear-gradient(to bottom, 
+        #4EA4D9, 
+        #88C9F2, 
+        #2A4C59, 
+        #91D7F2, 
+        #ACE5F2
+    );
+    height: 100vh;
+    color: white;
+}
+
+.dragon-background {
+    background: linear-gradient(to bottom, 
+        #0554F2, 
+        #0442BF, 
+        #03318C, 
+        #021F59, 
+        #0D0D0D
+    );
+    height: 100vh;
+    color: white;
+}
+
+.fairy-background {
+    background: linear-gradient(to bottom, 
+        #F2A2B1, 
+        #C09CD9, 
+        #8373BF, 
+        #6865BF, 
+        #F2D0C4
+    );
+    height: 100vh;
+    color: white;
+}
+
