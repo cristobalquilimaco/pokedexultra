@@ -183,12 +183,24 @@
 }
 
 .type-fairy {
-    background: linear-gradient(to bottom, #F4B1F4, #FFB3DE);
+    background: linear-gradient(to bottom, 
+    #f7768e, 
+    #c191e4, 
+    #ba7bd3, 
+    #b162c9, 
+    #e282af
+);
 }
 
 /* Tipos especiales */
 .type-steel {
-    background: linear-gradient(to bottom, #B8B8D0, #C0C0C0);
+    background: linear-gradient(to bottom, 
+    #A4A698, 
+    #8C8979, 
+    #595348, 
+    #262626, 
+    #0D0D0D
+);
 }
 
 .type-unknown {
