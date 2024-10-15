@@ -1,0 +1,17 @@
+.pokedex-container {
+    /* Otros estilos que desees */
+    padding: 20px; /* Agrega algo de espacio interno */
+    text-align: center; /* Centra el texto */
+}
+
+.grass-background {
+    background: linear-gradient(to bottom, 
+        #0B2559, 
+        #183B59, 
+        #2A5159, 
+        #327355, 
+        #5C8C46
+    );
+    height: 100vh; /* O el tamaño que necesites */
+    color: white; /* Color del texto */
+}
