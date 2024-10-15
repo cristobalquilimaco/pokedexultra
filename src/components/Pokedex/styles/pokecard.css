@@ -133,7 +133,13 @@
 }
 
 .type-bug {
-    background: linear-gradient(to bottom, #A8B820, #B2D72C);
+    background: linear-gradient(to bottom, 
+    #375936, 
+    #155902, 
+    #588C49, 
+    #488C03, 
+    #97BF04
+);
 }
 
 .type-rock {
