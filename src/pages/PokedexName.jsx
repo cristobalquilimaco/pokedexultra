@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import useFetch from "../hooks/UseFetch";
 import { useEffect, useState } from "react";
 import ErrorPage from "./ErrorPage";
+import PokedexNameDescription from "../components/PokedexName.jsx/PokedexNameDescription";
 
 const PokedexName = () => {
   const { name } = useParams();
@@ -29,7 +30,7 @@ const PokedexName = () => {
         <ErrorPage/>
       ) : (
         <>
-          <PokedexName pokemon = {pokemon} speciesData={speciesData}/>
+          <PokedexNameDescription speciesData={speciesData} pokemon={pokemon} />
         </>
       )}
     </div>
