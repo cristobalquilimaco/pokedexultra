@@ -27,11 +27,11 @@
 
 .type-normal {
     background: linear-gradient(to bottom, 
-        #FFA24A, 
-        #d17622, 
-        #FF7C00, 
-        #df8531, 
-        #CC6300
+    #FFA24A, 
+    #d17622, 
+    #FF7C00, 
+    #df8531, 
+    #CC6300
     );
 
 }
@@ -58,10 +58,10 @@
 
 .type-electric {
     background: linear-gradient(to bottom, 
-    #FFDA00, 
-    #E6C200, 
-    #FFD500, 
-    #C5A300, 
+    #d8b802, 
+    #caac01, 
+    #dbb701, 
+    #e9c201, 
     #FFD000
 );
 }
