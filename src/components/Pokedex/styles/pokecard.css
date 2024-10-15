@@ -28,9 +28,9 @@
 .type-normal {
     background: linear-gradient(to bottom, 
         #FFA24A, 
-        #803E00, 
+        #d17622, 
         #FF7C00, 
-        #805226, 
+        #df8531, 
         #CC6300
     );
 
@@ -87,19 +87,39 @@
 }
 
 .type-fighting {
-    background: linear-gradient(to bottom, #C03028, #FF6347);
+    background: linear-gradient(to bottom, 
+    #6E0B1F, 
+    #be2b48, 
+    #cc183c, 
+    #b61e3c, 
+    #BD1234
+);
 }
 
 .type-poison {
-    background: linear-gradient(to bottom, #A040A0, #DDA0DD);
+    background: linear-gradient(to bottom, 
+    #B679F2, 
+    #7229D9, 
+    #2E038C, 
+    #1D0259, 
+    #090126
+);
 }
 
 .type-ground {
-    background: linear-gradient(to bottom, #E0C068, #D2B48C);
+    background: linear-gradient(to bottom, 
+    #CCA700, 
+    #ad9d4b, 
+    #ceb234, 
+    #ac8f10, 
+    #FFD100
+);
 }
 
 .type-flying {
-    background: linear-gradient(to bottom, #A7B9E0, #B0C4DE);
+    background: linear-gradient(to bottom,
+    #A7B9E0, 
+    #B0C4DE);
 }
 
 .type-psychic {
