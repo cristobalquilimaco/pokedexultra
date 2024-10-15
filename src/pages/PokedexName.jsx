@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import useFetch from "../hooks/UseFetch";
 import { useEffect, useState } from "react";
+import ErrorPage from "./ErrorPage";
 
 const PokedexName = () => {
   const { name } = useParams();
@@ -25,7 +26,7 @@ const PokedexName = () => {
   return (
     <div className="pokedex__name">
       {hasError ? (
-        <h1>☠️ The Pokémon <span>{name}</span> doesnt exist</h1>
+        <ErrorPage/>
       ) : (
         <>
           <img src={pokemon?.sprites?.other?.home?.front_default} alt={pokemon?.name} />

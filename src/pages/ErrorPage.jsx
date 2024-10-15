@@ -2,7 +2,9 @@
 
 const ErrorPage = () => {
   return (
-    <div>ErrorPage</div>
+    <div>
+        <h1>☠️ The Pokémon <span>{name}</span> doesnt exist</h1>
+    </div>
   )
 }
 
