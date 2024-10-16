@@ -8,7 +8,8 @@ const PokedexNameDescription = ({ speciesData, pokemon }) => {
   const primaryType = pokemon?.types[0]?.type.name;
 
   return (
-    <div className={`pokedex-container ${primaryType ? `${primaryType}-background` : ''}`}>
+    <section className='principal__poke_page'>
+          <div className={`pokedex-container ${primaryType ? `${primaryType}-background` : ''}`}>
       {pokemon?.sprites?.other?.home?.front_default ? (
         <img className='poke__img__info' src={pokemon.sprites.other.home.front_default} alt={pokemon.name} />
       ) : (
@@ -75,6 +76,8 @@ const PokedexNameDescription = ({ speciesData, pokemon }) => {
         </div>
       )}
     </div>
+    </section>
+
   );
 };
 

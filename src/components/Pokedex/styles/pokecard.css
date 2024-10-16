@@ -394,3 +394,9 @@ box-shadow: inset -50px 50px 98px #915291,
     display: flex;
     width: 100%;
 }
+
+.pokedex__name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

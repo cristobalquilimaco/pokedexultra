@@ -181,8 +181,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow: hidden;
-    
+    justify-content: center;
 }
 
 .button__section{
@@ -204,13 +203,40 @@
 }
 
 .pokedex-container{
-    width: 100%;
+
     display: flex;
     flex-direction: column;
     align-items:center ;
+    justify-content: center;
 
 }
 
+.principal__poke_page{
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* DESCRIPTION */
+
+
+.poke__description{
+    background-color: #272b3309;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4em;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 1em;
+
+}
+
+
+
+/* STATS */
 
 .stast__info {
     list-style: none; /* Asegúrate de eliminar el estilo de lista */
