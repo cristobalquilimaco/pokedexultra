@@ -277,3 +277,10 @@
     width: 10%;
 }
 
+/* MOVES */
+
+.moves__list{
+    background-color: red;
+    width: 100%;
+    display: flex;
+}
