@@ -66,7 +66,7 @@ const PokedexNameDescription = ({ speciesData, pokemon }) => {
           )}
 
           {activeTab === 'moves' && (
-            <ul>
+            <ul className='moves__list'>
               {pokemon?.moves.map(movesInfo => (
                 <li key={movesInfo.move.url}>{movesInfo.move.name}</li>
               ))}
