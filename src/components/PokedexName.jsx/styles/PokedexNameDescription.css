@@ -1,3 +1,177 @@
+/* COLORES DE LOS BOTONES POR TIPO DE POKEMON */
+.pokemon-type-normal {
+    border: 1.5px solid #FFA24A;
+}
+
+.pokemon-type-normal:focus {
+    outline: none; 
+    box-shadow: 0 0 5px #eb9240; 
+}
+
+.pokemon-type-fire {
+    border: 1.5px solid #FF0800;
+}
+
+.pokemon-type-fire:focus {
+    outline: none;
+    box-shadow: 0 0 5px #FF0800;
+}
+
+.pokemon-type-water {
+    border: 1.5px solid #049DBF;
+}
+
+.pokemon-type-water:focus {
+    outline: none;
+    box-shadow: 0 0 5px #049DBF;
+}
+
+.pokemon-type-electric {
+    border: 1.5px solid #d8b802;
+}
+
+.pokemon-type-electric:focus {
+    outline: none;
+    box-shadow: 0 0 5px #d8b802;
+}
+
+.pokemon-type-grass {
+    border: 1.5px solid #327355;
+}
+
+.pokemon-type-grass:focus {
+    outline: none;
+    box-shadow: 0 0 5px #327355;
+}
+
+.pokemon-type-ice {
+    border: 1.5px solid #4EA4D9;
+}
+
+.pokemon-type-ice:focus {
+    outline: none;
+    box-shadow: 0 0 5px #4EA4D9;
+}
+
+.pokemon-type-fighting {
+    border: 1.5px solid #6E0B1F;
+}
+
+.pokemon-type-fighting:focus {
+    outline: none;
+    box-shadow: 0 0 5px #6E0B1F;
+}
+
+.pokemon-type-poison {
+    border: 1.5px solid #B679F2;
+}
+
+.pokemon-type-poison:focus {
+    outline: none;
+    box-shadow: 0 0 5px #B679F2;
+}
+
+.pokemon-type-ground {
+    border: 1.5px solid #CCA700;
+}
+
+.pokemon-type-ground:focus {
+    outline: none;
+    box-shadow: 0 0 5px #CCA700;
+}
+
+.pokemon-type-flying {
+    border: 1.5px solid #A7B9E0;
+}
+
+.pokemon-type-flying:focus {
+    outline: none;
+    box-shadow: 0 0 5px #A7B9E0;
+}
+
+.pokemon-type-psychic {
+    border: 1.5px solid #F972AF;
+}
+
+.pokemon-type-psychic:focus {
+    outline: none;
+    box-shadow: 0 0 5px #F972AF;
+}
+
+.pokemon-type-bug {
+    border: 1.5px solid #375936;
+}
+
+.pokemon-type-bug:focus {
+    outline: none;
+    box-shadow: 0 0 5px #375936;
+}
+
+.pokemon-type-rock {
+    border: 1.5px solid #40312C;
+}
+
+.pokemon-type-rock:focus {
+    outline: none;
+    box-shadow: 0 0 5px #40312C;
+}
+
+.pokemon-type-ghost {
+    border: 1.5px solid #0A0B0D;
+}
+
+.pokemon-type-ghost:focus {
+    outline: none;
+    box-shadow: 0 0 5px #0A0B0D;
+}
+
+.pokemon-type-dragon {
+    border: 1.5px solid #0554F2;
+}
+
+.pokemon-type-dragon:focus {
+    outline: none;
+    box-shadow: 0 0 5px #0554F2;
+}
+
+.pokemon-type-dark {
+    border: 1.5px solid #252252;
+}
+
+.pokemon-type-dark:focus {
+    outline: none;
+    box-shadow: 0 0 5px #252252;
+}
+
+.pokemon-type-fairy {
+    border: 1.5px solid #f7768e;
+}
+
+.pokemon-type-fairy:focus {
+    outline: none;
+    box-shadow: 0 0 5px #f7768e;
+}
+
+.pokemon-type-steel {
+    border: 1.5px solid #A4A698;
+}
+
+.pokemon-type-steel:focus {
+    outline: none;
+    box-shadow: 0 0 5px #A4A698;
+}
+
+.pokemon-type-unknown {
+    border: 1.5px solid #000000;
+}
+
+.pokemon-type-unknown:focus {
+    outline: none;
+    box-shadow: 0 0 5px #000000;
+}
+
+/* ESTILOS DE COMPONENTE */
+
 .pokedex__name{
     width: 100%;
     display: flex;
@@ -19,96 +193,4 @@
     width: 120px;
     height: 28px;
     border-radius: 20px;
-}
-
-.pokemon-type-normal {
-    border: 3px solid #FFA24A;
-}
-
-
-
-.pokemon-type-normal:focus {
-    outline: none; 
-    box-shadow: 0 0 5px #eb9240; 
-}
-
-.pokemon-type-fire {
-    border: 3px solid #FF0800;
-}
-
-.pokemon-type-fire:focus {
-    outline: none;
-    box-shadow: 0 0 5px #FF0800;
-}
-
-.pokemon-type-water {
-    background: var(--color-water);
-}
-.pokemon-type-water {
-    background: var(--color-water);
-    
-}
-
-.pokemon-type-electric {
-    background: var(--color-electric);
-}
-
-.pokemon-type-grass {
-    border: 5px solid var(--color-grass);
-}
-
-.pokemon-type-ice {
-    background: var(--color-ice);
-}
-
-.pokemon-type-fighting {
-    background: var(--color-fighting);
-}
-
-.pokemon-type-poison {
-    background: var(--color-poison);
-}
-
-.pokemon-type-ground {
-    background: var(--color-ground);
-}
-
-.pokemon-type-flying {
-    background: var(--color-flying);
-}
-
-.pokemon-type-psychic {
-    background: var(--color-psychic);
-}
-
-.pokemon-type-bug {
-    background: var(--color-bug);
-}
-
-.pokemon-type-rock {
-    background: var(--color-rock);
-}
-
-.pokemon-type-ghost {
-    background: var(--color-ghost);
-}
-
-.pokemon-type-dragon {
-    background: var(--color-dragon);
-}
-
-.pokemon-type-dark {
-    background: var(--color-dark);
-}
-
-.pokemon-type-fairy {
-    background: var(--color-fairy);
-}
-
-.pokemon-type-steel {
-    background: var(--color-steel);
-}
-
-.pokemon-type-unknown {
-    background: var(--color-unknown);
 }
