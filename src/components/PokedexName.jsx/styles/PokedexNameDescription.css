@@ -228,7 +228,6 @@
     flex-direction: column;
     align-items:center ;
 
-    
 }
 
 
@@ -280,9 +279,20 @@
 /* MOVES */
 
 .moves__list{
-    background-color: red;
-    width: 100%;
+    background-color: #0554f21c;
+    width: 95%;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     flex-wrap: wrap;
-    gap: 0.2em;
+    gap: 0.4em;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+
+
+.poke__move{
+    padding: 0.2em 0.6em 0.2em 0.6em;
+    border-radius: 20px;
 }
