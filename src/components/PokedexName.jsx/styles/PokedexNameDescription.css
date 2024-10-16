@@ -203,25 +203,6 @@
     
 }
 
-/* .stast__info{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items:flex-end;
-    justify-content: space-between;
-    padding: 1em;
-    
-} */
-
-.seecc{
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    width: 100%;
-}
-
 .pokedex-container{
     width: 100%;
     display: flex;
@@ -240,6 +221,9 @@
     align-items: center;
     justify-content: center;
     margin: 0.5em;
+    background-color: #272b3309;
+    border-radius: 20px;
+    padding: 1em;
 }
 
 .poke__stats {
@@ -247,7 +231,7 @@
     flex-direction: row;
     align-items: center; /* Alinea verticalmente el contenido */
     justify-content: space-between; /* Espacia el nombre, barra y valor */
-    width: 90%; /* Asegúrate de que ocupe todo el ancho */
+    width: 100%; /* Asegúrate de que ocupe todo el ancho */
     margin-bottom: 10px; /* Espacio entre las estadísticas */
     
 }
@@ -279,7 +263,7 @@
 /* MOVES */
 
 .moves__list{
-    background-color: #0554f21c;
+    background-color: #272b3309;
     width: 95%;
     display: flex;
     align-items: center;
@@ -288,9 +272,8 @@
     gap: 0.4em;
     margin-top: 20px;
     border-radius: 10px;
+    padding: 1em;
 }
-
-
 
 .poke__move{
     padding: 0.2em 0.6em 0.2em 0.6em;

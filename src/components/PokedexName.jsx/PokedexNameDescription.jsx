@@ -31,7 +31,7 @@ const PokedexNameDescription = ({ speciesData, pokemon }) => {
             <button className={`poke__button pokemon-type-${primaryType}`} onClick={() => setActiveTab('moves')}>Moves</button>
           </section>
           {activeTab === 'description' && (
-            <div className=''>
+            <div className='poke__description'>
               {speciesData.flavor_text_entries
                 .reduce((acc, entry) => {
                   const text = entry.flavor_text.replace(/\f/g, ' ');
