@@ -23,15 +23,15 @@ const PokedexNameDescription = ({ speciesData, pokemon }) => {
       {speciesData && (
         <div>
           <section>
-            {pokemon.types.map(typeInfo => (
-              <button
-                key={typeInfo.type.name}
-                className={`pokemon-type-${typeInfo.type.name}`}
-                onClick={() => setActiveTab('description')}
-              >
-                Description
-              </button>
-            ))}
+            {/* Renderizar solo un botón de Description */}
+            <button
+              className={`pokemon-type-${primaryType}`}
+              onClick={() => setActiveTab('description')}
+            >
+              Description
+            </button>
+
+            {/* Renderizar los botones para Stats y Moves */}
             <button className={`pokemon-type-${primaryType}`} onClick={() => setActiveTab('stats')}>Stats</button>
             <button className={`pokemon-type-${primaryType}`} onClick={() => setActiveTab('moves')}>Moves</button>
           </section>
@@ -60,7 +60,7 @@ const PokedexNameDescription = ({ speciesData, pokemon }) => {
                   <span>{statsInfo.stat.name}</span>
                   <span>{statsInfo.base_stat}</span>
                 </li>
-              ))}
+              ))} 
             </ul>
           )}
 
