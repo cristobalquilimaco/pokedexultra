@@ -19,14 +19,14 @@ const PokedexNameDescription = ({ speciesData, pokemon }) => {
         ) : (
           <img src="placeholder-image-url" alt="Placeholder" />
         )}
-        <h1>{pokemon?.name}</h1>
+        <h1 className='poke__name'>{pokemon?.name}</h1>
         <ul className="pokemon_list_type">
           {pokemon?.types.map(typeInfo => (
             <li key={typeInfo.type.url}>{typeInfo.type.name}</li>
           ))}
         </ul>
         {speciesData && (
-          <div className='seecc'>
+          <div className='principal__poke-container'>
             <section className='button__section'>
               <button
                 className={`poke__button pokemon-type-${primaryType}`}

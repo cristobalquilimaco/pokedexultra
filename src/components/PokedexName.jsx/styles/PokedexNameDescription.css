@@ -172,6 +172,8 @@
 
 /* ESTILOS DE COMPONENTE */
 
+.Poke__name
+
 .poke__img__info{
     width: 350px;
 }
@@ -218,12 +220,19 @@
     justify-content: center;
 }
 
+.principal__poke-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 
 /* DESCRIPTION */
 
 
 .poke__description{
-    background-color: #272b3309;
+    background-color: #272b3307;
     width: 100%;
     display: flex;
     flex-direction: column;
