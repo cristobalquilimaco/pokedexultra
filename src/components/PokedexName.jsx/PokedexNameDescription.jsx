@@ -32,7 +32,7 @@ const PokedexNameDescription = ({ speciesData, pokemon }) => {
           </section>
 
           {activeTab === 'description' && (
-            <div>
+            <div className=''>
               {speciesData.flavor_text_entries
                 .reduce((acc, entry) => {
                   const text = entry.flavor_text.replace(/\f/g, ' ');

@@ -182,6 +182,7 @@
     flex-direction: column;
     align-items: center;
     overflow: hidden;
+    
 }
 
 .button__section{
@@ -192,12 +193,14 @@
     align-items: center;
     justify-content: center;
     gap: 0.5em;
+    
 }
 
 .poke__button{
     width: 120px;
     height: 28px;
     border-radius: 20px;
+    
 }
 
 /* .stast__info{
@@ -211,12 +214,12 @@
 } */
 
 .seecc{
-    width: 100%;
+
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    
+    justify-content: flex-start;
+    width: 100%;
 }
 
 .pokedex-container{
@@ -227,6 +230,8 @@
 
     
 }
+
+
 .stast__info {
     list-style: none; /* Asegúrate de eliminar el estilo de lista */
     padding: 0; /* Elimina el padding */
@@ -234,7 +239,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     margin: 0.5em;
 }
 
@@ -243,9 +248,9 @@
     flex-direction: row;
     align-items: center; /* Alinea verticalmente el contenido */
     justify-content: space-between; /* Espacia el nombre, barra y valor */
-    width: 100%; /* Asegúrate de que ocupe todo el ancho */
+    width: 90%; /* Asegúrate de que ocupe todo el ancho */
     margin-bottom: 10px; /* Espacio entre las estadísticas */
-
+    
 }
 
 .progress-container {
@@ -264,12 +269,11 @@
 }
 
 .stat__name{
-    width: 100%;
     margin: 0;
-   
+    width: 60%;
 }
 
 .stat__value{
-   width: 10%;
+    width: 10%;
 }
 
