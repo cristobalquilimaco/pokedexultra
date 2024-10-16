@@ -11,6 +11,51 @@ body {
     font-family: "Noto Sans", sans-serif;
 }
 
-li{
-    list-style: none;
+/* Reset de estilos CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif; /* Cambia la fuente si es necesario */
+    line-height: 1.5;
+}
+
+ul {
+    list-style: none; /* Elimina los estilos de lista */
+}
+
+a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: inherit; /* Hereda el color del texto */
+}
+
+img {
+    max-width: 100%; /* Hace que las imágenes sean responsivas */
+    height: auto; /* Mantiene la proporción */
+}
+
+button {
+    background: none; /* Elimina el fondo predeterminado de los botones */
+    border: none; /* Elimina el borde */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+/* Estilos para evitar el contorno en el enfoque */
+:focus {
+    outline: none;
+}
+
+/* Estilos para asegurar que los campos de formulario sean consistentes */
+input, textarea {
+    font-family: inherit; /* Asegura que la fuente sea la misma */
+    font-size: inherit; /* Asegura que el tamaño de la fuente sea el mismo */
+    border: none; /* Elimina el borde predeterminado */
+    outline: none; /* Elimina el contorno predeterminado */
+}
+
+

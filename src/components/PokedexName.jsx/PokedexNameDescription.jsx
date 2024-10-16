@@ -10,7 +10,7 @@ const PokedexNameDescription = ({ speciesData, pokemon }) => {
   return (
     <div className={`pokedex-container ${primaryType ? `${primaryType}-background` : ''}`}>
       {pokemon?.sprites?.other?.home?.front_default ? (
-        <img src={pokemon.sprites.other.home.front_default} alt={pokemon.name} />
+        <img className='poke__img__info' src={pokemon.sprites.other.home.front_default} alt={pokemon.name} />
       ) : (
         <img src="placeholder-image-url" alt="Placeholder" />
       )}
@@ -21,7 +21,7 @@ const PokedexNameDescription = ({ speciesData, pokemon }) => {
         ))}
       </ul>
       {speciesData && (
-        <div>
+        <div className='seecc'>
           <section className='button__section'>
             <button
               className={`poke__button pokemon-type-${primaryType}`}
@@ -53,20 +53,17 @@ const PokedexNameDescription = ({ speciesData, pokemon }) => {
   {pokemon?.stats.map(statsInfo => {
     const percentage = (statsInfo.base_stat / 200) * 100; // Calcula el porcentaje
     return (
-      <li key={statsInfo.stat.name}>
-        <span>{statsInfo.stat.name}</span>
+      <li className='poke__stats' key={statsInfo.stat.name}>
+        <span className='stat__name'>{statsInfo.stat.name}</span>
         <div className="progress-container">
-          <div
-            className="progress-bar"
-            style={{ width: `${percentage}%` }} // Establece el ancho según el porcentaje
-          />
+          <div className="progress-bar"
+            style={{ width: `${percentage}%` }}/>
         </div>
-        <span>{statsInfo.base_stat}</span>
+        <span className='stat__value'>{statsInfo.base_stat}</span>
       </li>
     );
   })}
 </ul>
-
           )}
 
           {activeTab === 'moves' && (

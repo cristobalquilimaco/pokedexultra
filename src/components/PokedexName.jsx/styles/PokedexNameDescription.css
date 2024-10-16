@@ -172,11 +172,16 @@
 
 /* ESTILOS DE COMPONENTE */
 
+.poke__img__info{
+    width: 350px;
+}
+
 .pokedex__name{
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
 }
 
 .button__section{
@@ -195,9 +200,23 @@
     border-radius: 20px;
 }
 
-.stast__info{
+/* .stast__info{
+    width: 100%;
     display: flex;
     flex-direction: column;
+    align-items:flex-end;
+    justify-content: space-between;
+    padding: 1em;
+    
+} */
+
+.seecc{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 .pokedex-container{
@@ -205,21 +224,52 @@
     display: flex;
     flex-direction: column;
     align-items:center ;
-    justify-content: center;
+
+    
+}
+.stast__info {
+    list-style: none; /* Asegúrate de eliminar el estilo de lista */
+    padding: 0; /* Elimina el padding */
+    width: 100%; /* Asegúrate de que ocupe todo el ancho */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0.5em;
+}
+
+.poke__stats {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Alinea verticalmente el contenido */
+    justify-content: space-between; /* Espacia el nombre, barra y valor */
+    width: 100%; /* Asegúrate de que ocupe todo el ancho */
+    margin-bottom: 10px; /* Espacio entre las estadísticas */
+
 }
 
 .progress-container {
     background: #e0e0e0; /* Color de fondo de la barra */
     border-radius: 5px;
     overflow: hidden;
-    width: 100%; /* Ajusta el ancho según sea necesario */
+    width: 100%; /* Ancho fijo para la barra */
     height: 20px; /* Altura de la barra */
-    margin: 5px 0; /* Espaciado entre las barras */
+    margin: 0 10px; /* Espaciado a los lados de la barra */
 }
 
 .progress-bar {
     height: 100%;
     background: #76c7c0; /* Color de la barra llena */
     transition: width 0.3s ease; /* Suaviza la transición */
+}
+
+.stat__name{
+    width: 100%;
+    margin: 0;
+   
+}
+
+.stat__value{
+   width: 10%;
 }
 
