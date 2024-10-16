@@ -24,11 +24,11 @@ const PokedexNameDescription = ({ speciesData, pokemon }) => {
         <div>
           <section className='button__section'>
             <button
-              className={`pokemon-type-${primaryType}`}
+              className={`poke__button pokemon-type-${primaryType}`}
               onClick={() => setActiveTab('description')}
             >Description</button>
-            <button className={`pokemon-type-${primaryType}`} onClick={() => setActiveTab('stats')}>Stats</button>
-            <button className={`pokemon-type-${primaryType}`} onClick={() => setActiveTab('moves')}>Moves</button>
+            <button className={`poke__button pokemon-type-${primaryType}`} onClick={() => setActiveTab('stats')}>Stats</button>
+            <button className={`poke__button pokemon-type-${primaryType}`} onClick={() => setActiveTab('moves')}>Moves</button>
           </section>
 
           {activeTab === 'description' && (
