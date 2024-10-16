@@ -2,9 +2,10 @@ import { useState } from 'react';
 import PropTypes from 'prop-types';
 import "./styles/PokedexNameDescription.css"; 
 import "../Pokedex/styles/pokecard.css";
-import Description from './Description'; // Asegúrate de importar el componente
-import Stats from './Stats'; // Asegúrate de importar el componente
-import Moves from './Moves'; // Asegúrate de importar el componente
+import PokeDescription from './PokeDescription/Pokedescription';
+import PokeStats from './PokeStats/PokeStats';
+import PokeMoves from './PokeMoves.jsx/PokeMoves';
+
 
 const PokedexNameDescription = ({ speciesData, pokemon }) => {
   const [activeTab, setActiveTab] = useState('description');
@@ -41,13 +42,13 @@ const PokedexNameDescription = ({ speciesData, pokemon }) => {
               </button>
             </section>
             {activeTab === 'description' && (
-              <Description flavorTextEntries={speciesData.flavor_text_entries} />
+              <PokeDescription flavorTextEntries={speciesData.flavor_text_entries} />
             )}
             {activeTab === 'stats' && (
-              <Stats stats={pokemon?.stats} />
+              <PokeStats stats={pokemon?.stats} />
             )}
             {activeTab === 'moves' && (
-              <Moves moves={pokemon?.moves} primaryType={primaryType} />
+              <PokeMoves moves={pokemon?.moves} primaryType={primaryType} />
             )}
           </div>
         )}
