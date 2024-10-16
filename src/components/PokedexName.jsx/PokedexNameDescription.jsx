@@ -1,10 +1,10 @@
-
-import PropTypes from 'prop-types';
-import "./styles/PokedexNameDescription.css"; // Asegúrate de tener este archivo para los estilos
 import { useState } from 'react';
+import PropTypes from 'prop-types';
+import "./styles/PokedexNameDescription.css"; 
+import "../Pokedex/styles/pokecard.css";
 
 const PokedexNameDescription = ({ speciesData, pokemon }) => {
-  const [activeTab, setActiveTab] = useState('description'); // Estado para controlar la pestaña activa
+  const [activeTab, setActiveTab] = useState('description');
   const primaryType = pokemon?.types[0]?.type.name;
 
   return (
@@ -23,9 +23,17 @@ const PokedexNameDescription = ({ speciesData, pokemon }) => {
       {speciesData && (
         <div>
           <section>
-            <button onClick={() => setActiveTab('description')}>Description</button>
-            <button onClick={() => setActiveTab('stats')}>Stats</button>
-            <button onClick={() => setActiveTab('moves')}>Moves</button>
+            {pokemon.types.map(typeInfo => (
+              <button
+                key={typeInfo.type.name}
+                className={`pokemon-type-${typeInfo.type.name}`}
+                onClick={() => setActiveTab('description')}
+              >
+                Description
+              </button>
+            ))}
+            <button className={`pokemon-type-${primaryType}`} onClick={() => setActiveTab('stats')}>Stats</button>
+            <button className={`pokemon-type-${primaryType}`} onClick={() => setActiveTab('moves')}>Moves</button>
           </section>
 
           {activeTab === 'description' && (

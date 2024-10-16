@@ -4,3 +4,81 @@
     flex-direction: column;
     align-items: center;
 }
+
+
+.pokemon-type-normal {
+    border: 3px solid #FFA24A;
+}
+
+
+.pokemon-type-fire {
+    border: 3px solid #FF0800;
+}
+
+.pokemon-type-water {
+    background: var(--color-water);
+}
+
+.pokemon-type-electric {
+    background: var(--color-electric);
+}
+
+.pokemon-type-grass {
+    border: 5px solid var(--color-grass);
+}
+
+.pokemon-type-ice {
+    background: var(--color-ice);
+}
+
+.pokemon-type-fighting {
+    background: var(--color-fighting);
+}
+
+.pokemon-type-poison {
+    background: var(--color-poison);
+}
+
+.pokemon-type-ground {
+    background: var(--color-ground);
+}
+
+.pokemon-type-flying {
+    background: var(--color-flying);
+}
+
+.pokemon-type-psychic {
+    background: var(--color-psychic);
+}
+
+.pokemon-type-bug {
+    background: var(--color-bug);
+}
+
+.pokemon-type-rock {
+    background: var(--color-rock);
+}
+
+.pokemon-type-ghost {
+    background: var(--color-ghost);
+}
+
+.pokemon-type-dragon {
+    background: var(--color-dragon);
+}
+
+.pokemon-type-dark {
+    background: var(--color-dark);
+}
+
+.pokemon-type-fairy {
+    background: var(--color-fairy);
+}
+
+.pokemon-type-steel {
+    background: var(--color-steel);
+}
+
+.pokemon-type-unknown {
+    background: var(--color-unknown);
+}

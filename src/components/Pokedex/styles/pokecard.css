@@ -25,187 +25,230 @@
 
 /* Tipos de Pokémon y sus colores con degradados */
 
-.type-normal {
-    background: linear-gradient(to bottom, 
-    #FFA24A, 
-    #d17622, 
-    #FF7C00, 
-    #df8531, 
-    #CC6300
-    );
+:root {
+    /* Normal */
+    --color-normal: linear-gradient(to bottom, 
+        #FFA24A, 
+        #d17622, 
+        #FF7C00, 
+        #df8531, 
+        #CC6300);
 
-}
+    /* Fire */
+    --color-fire: linear-gradient(to bottom, 
+        #FFB100, 
+        #FFDB00, 
+        #FF8100, 
+        #FF4500, 
+        #FF0800);
 
-.type-fire {
-    background: linear-gradient(to bottom, 
-    #FFB100, 
-    #FFDB00, 
-    #FF8100, 
-    #FF4500, 
-    #FF0800
-);
-}
+    /* Water */
+    --color-water: linear-gradient(to bottom, 
+        #012340, 
+        #03588C, 
+        #049DD9, 
+        #049DBF, 
+        #04C4D9);
 
-.type-water {
-    background: linear-gradient(to bottom, 
-    #012340, 
-    #03588C, 
-    #049DD9, 
-    #049DBF, 
-    #04C4D9
-);
-}
+    /* Electric */
+    --color-electric: linear-gradient(to bottom, 
+        #d8b802, 
+        #caac01, 
+        #dbb701, 
+        #e9c201, 
+        #FFD000);
 
-.type-electric {
-    background: linear-gradient(to bottom, 
-    #d8b802, 
-    #caac01, 
-    #dbb701, 
-    #e9c201, 
-    #FFD000
-);
-}
+    /* Grass */
+    --color-grass: linear-gradient(to bottom, 
+        #0B2559, 
+        #183B59, 
+        #2A5159, 
+        #327355, 
+        #5C8C46);
 
-.type-grass {
-    background: linear-gradient(to bottom, 
-    #0B2559, 
-    #183B59, 
-    #2A5159, 
-    #327355, 
-    #5C8C46
-);
-}
+    /* Ice */
+    --color-ice: linear-gradient(to bottom, 
+        #4EA4D9, 
+        #88C9F2, 
+        #4c98b6, 
+        #91D7F2, 
+        #ACE5F2);
 
-.type-ice {
-    background: linear-gradient(to bottom, 
-    #4EA4D9, 
-    #88C9F2, 
-    #4c98b6, 
-    #91D7F2, 
-    #ACE5F2
-);
-}
+    /* Fighting */
+    --color-fighting: linear-gradient(to bottom, 
+        #6E0B1F, 
+        #be2b48, 
+        #cc183c, 
+        #b61e3c, 
+        #BD1234);
 
-.type-fighting {
-    background: linear-gradient(to bottom, 
-    #6E0B1F, 
-    #be2b48, 
-    #cc183c, 
-    #b61e3c, 
-    #BD1234
-);
-}
+    /* Poison */
+    --color-poison: linear-gradient(to bottom, 
+        #B679F2, 
+        #7229D9, 
+        #2E038C, 
+        #1D0259, 
+        #090126);
 
-.type-poison {
-    background: linear-gradient(to bottom, 
-    #B679F2, 
-    #7229D9, 
-    #2E038C, 
-    #1D0259, 
-    #090126
-);
-}
+    /* Ground */
+    --color-ground: linear-gradient(to bottom, 
+        #CCA700, 
+        #ad9d4b, 
+        #ceb234, 
+        #ac8f10, 
+        #FFD100);
 
-.type-ground {
-    background: linear-gradient(to bottom, 
-    #CCA700, 
-    #ad9d4b, 
-    #ceb234, 
-    #ac8f10, 
-    #FFD100
-);
-}
+    /* Flying */
+    --color-flying: linear-gradient(to bottom,
+        #A7B9E0, 
+        #B0C4DE);
 
-.type-flying {
-    background: linear-gradient(to bottom,
-    #A7B9E0, 
-    #B0C4DE);
-}
+    /* Psychic */
+    --color-psychic: linear-gradient(to bottom, 
+        #F972AF, 
+        #FF97CB, 
+        #F5D4EC, 
+        #d7b0fa, 
+        #BCB5DF);
 
-.type-psychic {
-    background: linear-gradient(to bottom, 
-    #F972AF, 
-    #FF97CB, 
-    #F5D4EC, 
-    #d7b0fa, 
-    #BCB5DF
-);
-}
+    /* Bug */
+    --color-bug: linear-gradient(to bottom, 
+        #375936, 
+        #155902, 
+        #588C49, 
+        #488C03, 
+        #97BF04);
 
-.type-bug {
-    background: linear-gradient(to bottom, 
-    #375936, 
-    #155902, 
-    #588C49, 
-    #488C03, 
-    #97BF04
-);
-}
+    /* Rock */
+    --color-rock: linear-gradient(to bottom, 
+        #BFB6AE, 
+        #40312C, 
+        #73605A, 
+        #A6948D, 
+        #8f8f8f);
 
-.type-rock {
-    background: linear-gradient(to bottom, 
-    #BFB6AE, 
-    #40312C, 
-    #73605A, 
-    #A6948D, 
-    #8f8f8f
-);
-}
+    /* Ghost */
+    --color-ghost: linear-gradient(to bottom, 
+        #0A0B0D, 
+        #1F2326, 
+        #617477, 
+        #515251, 
+        #585858);
 
-.type-ghost {
-    background: linear-gradient(to bottom, 
-    #0A0B0D, 
-    #1F2326, 
-    #617477, 
-    #515251, 
-    #585858
-);
-}
-
-.type-dragon {
-        background: linear-gradient(to bottom, 
+    /* Dragon */
+    --color-dragon: linear-gradient(to bottom, 
         #0554F2, 
         #0442BF, 
         #03318C, 
         #021F59, 
-        #0D0D0D
-    );
+        #0D0D0D);
+
+    /* Dark */
+    --color-dark: linear-gradient(to bottom, 
+        #252252, 
+        #665DDE, 
+        #433D91, 
+        #49429E, 
+        #373278);
+
+    /* Fairy */
+    --color-fairy: linear-gradient(to bottom, 
+        #f7768e, 
+        #c191e4, 
+        #ba7bd3, 
+        #b162c9, 
+        #e282af);
+
+    /* Steel */
+    --color-steel: linear-gradient(to bottom, 
+        #A4A698, 
+        #8C8979, 
+        #595348, 
+        #262626, 
+        #0D0D0D);
+
+    /* Unknown */
+    --color-unknown: linear-gradient(to bottom, 
+        #000000, 
+        #555555);
+}
+
+.type-normal {
+    background: var(--color-normal);
+}
+
+.type-fire {
+    background: var(--color-fire);
+}
+
+.type-water {
+    background: var(--color-water);
+}
+
+.type-electric {
+    background: var(--color-electric);
+}
+
+.type-grass {
+    background: var(--color-grass);
+}
+
+.type-ice {
+    background: var(--color-ice);
+}
+
+.type-fighting {
+    background: var(--color-fighting);
+}
+
+.type-poison {
+    background: var(--color-poison);
+}
+
+.type-ground {
+    background: var(--color-ground);
+}
+
+.type-flying {
+    background: var(--color-flying);
+}
+
+.type-psychic {
+    background: var(--color-psychic);
+}
+
+.type-bug {
+    background: var(--color-bug);
+}
+
+.type-rock {
+    background: var(--color-rock);
+}
+
+.type-ghost {
+    background: var(--color-ghost);
+}
+
+.type-dragon {
+    background: var(--color-dragon);
 }
 
 .type-dark {
-    background: linear-gradient(to bottom, 
-    #252252, 
-    #665DDE, 
-    #433D91, 
-    #49429E, 
-    #373278
-);
+    background: var(--color-dark);
 }
 
 .type-fairy {
-    background: linear-gradient(to bottom, 
-    #f7768e, 
-    #c191e4, 
-    #ba7bd3, 
-    #b162c9, 
-    #e282af
-);
+    background: var(--color-fairy);
 }
 
-/* Tipos especiales */
 .type-steel {
-    background: linear-gradient(to bottom, 
-    #A4A698, 
-    #8C8979, 
-    #595348, 
-    #262626, 
-    #0D0D0D
-);
+    background: var(--color-steel);
 }
 
 .type-unknown {
-    background: linear-gradient(to bottom, #000000, #555555);
+    background: var(--color-unknown);
 }
+
 
 
 /* NAME POKEMON */
