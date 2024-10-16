@@ -19,6 +19,11 @@
     border: 3px solid #FF0800;
 }
 
+.pokemon-type-fire:focus {
+    outline: none;
+    box-shadow: 0 0 5px #FF0800;
+}
+
 .pokemon-type-water {
     background: var(--color-water);
 }
