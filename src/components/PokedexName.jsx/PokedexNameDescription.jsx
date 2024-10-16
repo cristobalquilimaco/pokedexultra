@@ -22,16 +22,11 @@ const PokedexNameDescription = ({ speciesData, pokemon }) => {
       </ul>
       {speciesData && (
         <div>
-          <section>
-            {/* Renderizar solo un botón de Description */}
+          <section className='button__section'>
             <button
               className={`pokemon-type-${primaryType}`}
               onClick={() => setActiveTab('description')}
-            >
-              Description
-            </button>
-
-            {/* Renderizar los botones para Stats y Moves */}
+            >Description</button>
             <button className={`pokemon-type-${primaryType}`} onClick={() => setActiveTab('stats')}>Stats</button>
             <button className={`pokemon-type-${primaryType}`} onClick={() => setActiveTab('moves')}>Moves</button>
           </section>

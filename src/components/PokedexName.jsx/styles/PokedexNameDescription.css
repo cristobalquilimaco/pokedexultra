@@ -10,9 +10,11 @@
     border: 3px solid #FFA24A;
 }
 
+
+
 .pokemon-type-normal:focus {
-    outline: none; /* Elimina el contorno predeterminado del navegador */
-    box-shadow: 0 0 5px #eb9240; /* Agrega un brillo alrededor del borde */
+    outline: none; 
+    box-shadow: 0 0 5px #eb9240; 
 }
 
 .pokemon-type-fire {
@@ -26,6 +28,10 @@
 
 .pokemon-type-water {
     background: var(--color-water);
+}
+.pokemon-type-water {
+    background: var(--color-water);
+    
 }
 
 .pokemon-type-electric {
