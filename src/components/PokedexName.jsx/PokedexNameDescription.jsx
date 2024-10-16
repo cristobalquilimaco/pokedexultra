@@ -30,7 +30,6 @@ const PokedexNameDescription = ({ speciesData, pokemon }) => {
             <button className={`poke__button pokemon-type-${primaryType}`} onClick={() => setActiveTab('stats')}>Stats</button>
             <button className={`poke__button pokemon-type-${primaryType}`} onClick={() => setActiveTab('moves')}>Moves</button>
           </section>
-
           {activeTab === 'description' && (
             <div className=''>
               {speciesData.flavor_text_entries
