@@ -49,14 +49,24 @@ const PokedexNameDescription = ({ speciesData, pokemon }) => {
           )}
 
           {activeTab === 'stats' && (
-            <ul>
-              {pokemon?.stats.map(statsInfo => (
-                <li key={statsInfo.stat.name}>
-                  <span>{statsInfo.stat.name}</span>
-                  <span>{statsInfo.base_stat}</span>
-                </li>
-              ))} 
-            </ul>
+            <ul className='stast__info'>
+  {pokemon?.stats.map(statsInfo => {
+    const percentage = (statsInfo.base_stat / 200) * 100; // Calcula el porcentaje
+    return (
+      <li key={statsInfo.stat.name}>
+        <span>{statsInfo.stat.name}</span>
+        <div className="progress-container">
+          <div
+            className="progress-bar"
+            style={{ width: `${percentage}%` }} // Establece el ancho según el porcentaje
+          />
+        </div>
+        <span>{statsInfo.base_stat}</span>
+      </li>
+    );
+  })}
+</ul>
+
           )}
 
           {activeTab === 'moves' && (

@@ -195,6 +195,10 @@
     border-radius: 20px;
 }
 
+.stast__info{
+    display: flex;
+    flex-direction: column;
+}
 
 .pokedex-container{
     width: 100%;
@@ -203,3 +207,19 @@
     align-items:center ;
     justify-content: center;
 }
+
+.progress-container {
+    background: #e0e0e0; /* Color de fondo de la barra */
+    border-radius: 5px;
+    overflow: hidden;
+    width: 100%; /* Ajusta el ancho según sea necesario */
+    height: 20px; /* Altura de la barra */
+    margin: 5px 0; /* Espaciado entre las barras */
+}
+
+.progress-bar {
+    height: 100%;
+    background: #76c7c0; /* Color de la barra llena */
+    transition: width 0.3s ease; /* Suaviza la transición */
+}
+
