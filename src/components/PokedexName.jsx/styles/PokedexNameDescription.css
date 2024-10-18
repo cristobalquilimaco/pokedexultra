@@ -172,7 +172,9 @@
 
 /* ESTILOS DE COMPONENTE */
 
-.Poke__name
+.poke__name{
+    text-transform: capitalize;
+}
 
 .poke__img__info{
     width: 350px;

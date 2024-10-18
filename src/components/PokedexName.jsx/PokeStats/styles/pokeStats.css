@@ -1,0 +1,25 @@
+/* pokeStats.css */
+
+.progress-bar-hp {
+    background-color: #F1A5F1;
+}
+
+.progress-bar-attack {
+    background-color: #fc3333;
+}
+
+.progress-bar-defense {
+    background-color: #0ddb2f;
+}
+
+.progress-bar-special-attack {
+    background-color: #a30729;
+}
+
+.progress-bar-special-defense {
+    background-color: #11ff64;
+}
+
+.progress-bar-speed {
+    background-color: #0CCAE8;
+}
