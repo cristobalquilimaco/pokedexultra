@@ -1,5 +1,6 @@
 .principal_container{
     width: 70%;
+    background-color: red;
 }
 
 .card_container{
@@ -17,6 +18,7 @@
     display: flex;
     justify-content: center;
     margin-top: 20px;
+
   }
   
   .pagination button {
@@ -36,3 +38,14 @@
     opacity: 0.5;
   }
   
+
+  @media (max-width: 600px) {
+    .pagination {
+        overflow-x: auto; /* Habilita el desplazamiento horizontal */
+        white-space: nowrap; /* Evita que los botones se envuelvan */
+    }
+
+    .pagination button {
+        min-width: 40px; /* Ancho mínimo para los botones */
+    }
+}

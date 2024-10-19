@@ -3,5 +3,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
 
+.search__pokemon{
+    background-color: red;
 }

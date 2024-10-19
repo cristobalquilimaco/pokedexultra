@@ -1,4 +1,3 @@
-
 import PropTypes from 'prop-types';
 
 import "./styles/pokeContainer.css"
@@ -31,26 +30,18 @@ const PokeContainer = ({ pokemons }) => {
         ))}
       </div>
       <div className='pagination'>
-        <button 
+        <button className='btn__pag'
           onClick={() => paginate(currentPage - 1)} 
           disabled={currentPage === 1}
         >
-          Anterior
+          Prev
         </button>
-        {[...Array(totalPages)].map((_, index) => (
-          <button 
-            key={index + 1} 
-            onClick={() => paginate(index + 1)} 
-            className={currentPage === index + 1 ? 'active' : ''}
-          >
-            {index + 1}
-          </button>
-        ))}
-        <button 
+        <span className="page-info">Page {currentPage} of {totalPages}</span>
+        <button className='btn__pag'
           onClick={() => paginate(currentPage + 1)} 
           disabled={currentPage === totalPages}
         >
-          Siguiente
+          Next
         </button>
       </div>
     </div>
