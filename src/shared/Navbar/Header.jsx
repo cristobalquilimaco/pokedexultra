@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom"
 import logo from "../../assets/images/logo.png"
-import "./styles/navbar.css"
+import "./styles/header.css"
 
-const Navbar = () => {
+const Header = () => {
   return (
-    <nav className="navbar">
+    <header className="navbar">
         <img className="img__logo" src={logo} alt="" />
         <Link to={"/pokedex"}><h1 className="logo">POKEDEX</h1></Link>
-    </nav>
+    </header>
   )
 }
 
-export default Navbar
+export default Header
