@@ -1,11 +1,12 @@
 import logo from "../../assets/images/logo.png"
+import "./styles/navbar.css"
 
 const Navbar = () => {
   return (
-    <div>
+    <nav className="navbar">
         <h1 className="logo">POKEDEX</h1>
         <img className="img__logo" src={logo} alt="" />
-    </div>
+    </nav>
   )
 }
 
