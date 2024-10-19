@@ -3,6 +3,7 @@ import { setTrainerName, setTrainerAvatar } from "../store/slices/trainerName.Sl
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import images from "../assets/images/images.js";
+import "../pages/styles/home.css"
 
 const Home = () => {
     const [selectedAvatar, setSelectedAvatar] = useState(null);
@@ -29,13 +30,13 @@ const Home = () => {
     };
 
     return (
-        <div>
+        <div className="home__page">
             <h1>POKEDEX</h1>
             <h2>Hi Trainer</h2>
             <h3>Press Star</h3>
-            <form onSubmit={handleSubmit}>
-                <input ref={nameRef} type="text" placeholder="Enter your name" />
-                <div>
+            <form className="poke__form" onSubmit={handleSubmit}>
+                <input className="name__input" ref={nameRef} type="text" placeholder="Enter your name" />
+                <div className="avatar__section">
                     <h4>Select an Avatar:</h4>
                     {Object.entries(images).map(([key, src]) => (
                         <label key={key}>
@@ -45,11 +46,11 @@ const Home = () => {
                                 value={key}
                                 onChange={() => setSelectedAvatar(src)}
                             />
-                            <img src={src} alt={key} style={{ width: 50, height: 50 }} />
+                            <img className="avatar" src={src} alt={key} style={{ width: 50, height: 50 }} />
                         </label>
                     ))}
                 </div>
-                <button type="submit">Catch them all!</button>
+                <button className="login__button" type="submit">Catch them all!</button>
             </form>
         </div>
     );

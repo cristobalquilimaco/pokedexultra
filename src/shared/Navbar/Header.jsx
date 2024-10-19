@@ -15,7 +15,7 @@ const {name, avatar} = useSelector(states => states.trainerName);
       <Link to={"/pokedex"}><h1 className="logo">POKEDEX</h1></Link>
       </div>
       <div className="user__info">
-        <p>{name}</p>
+        <p className="name__trainer">{name}</p>
         <img className="avatar" src={avatar} alt="" />
       </div>
     </header>
