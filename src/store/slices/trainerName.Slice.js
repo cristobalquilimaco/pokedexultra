@@ -2,12 +2,19 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const trainerNameSlice = createSlice({
     name: "trainerName",
-    initialState:"",
+    initialState: {
+        name: "",
+        avatar: null
+    },
     reducers: {
-        setTrainerName: (state, action) => action.payload
+        setTrainerName: (state, action) => {
+            state.name = action.payload;
+        },
+        setTrainerAvatar: (state, action) => {
+            state.avatar = action.payload;
+        }
     }
-})
+});
 
-export const { setTrainerName } = trainerNameSlice.actions
-
-export default trainerNameSlice.reducer
+export const { setTrainerName, setTrainerAvatar } = trainerNameSlice.actions;
+export default trainerNameSlice.reducer;

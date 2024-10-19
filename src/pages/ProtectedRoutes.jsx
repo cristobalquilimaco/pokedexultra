@@ -1,14 +1,15 @@
-import { useSelector } from "react-redux"
-import { Navigate, Outlet } from "react-router-dom"
+import { useSelector } from "react-redux";
+import { Navigate, Outlet } from "react-router-dom";
 
 const ProtectedRoutes = () => {
-    const trainerName = useSelector(states => states.trainerName)
+    const { name, avatar } = useSelector(states => states.trainerName);
 
-    if(trainerName.length >= 3){
-        return <Outlet />
-    }else{
-        return <Navigate to="/"/>
-        }
+    // Verificar que el nombre tenga al menos 3 caracteres y que se haya seleccionado un avatar
+    if (name.length >= 3 && avatar) {
+        return <Outlet />;
+    } else {
+        return <Navigate to="/" />;
     }
+}
 
-export default ProtectedRoutes
+export default ProtectedRoutes;
