@@ -16,3 +16,12 @@
     color: rgba(158, 43, 43, 0.897);
 }
 
+.user__info{
+    display: flex;
+}
+
+.avatar{
+    width: 30px;
+    border-radius: 50%;
+    border: 2px solid red;
+}
