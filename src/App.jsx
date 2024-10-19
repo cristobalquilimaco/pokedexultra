@@ -4,7 +4,7 @@ import Pokedex from "./pages/Pokedex"
 import ProtectedRoutes from "./pages/ProtectedRoutes"
 import "../src/app.css"
 import PokedexName from "./pages/PokedexName"
-import Navbar from "./shared/Navbar/Navbar"
+import Navbar from "./shared/Navbar/Header"
 
 
 const App = () => {
