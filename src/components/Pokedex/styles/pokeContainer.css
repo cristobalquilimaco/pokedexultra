@@ -1,6 +1,6 @@
 .principal_container{
-    width: 70%;
-    background-color: red;
+
+
 }
 
 .card_container{
@@ -17,25 +17,37 @@
 .pagination {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 20px;
-
+    gap: 0.5em;
   }
   
-  .pagination button {
-    margin: 0 5px;
-    padding: 10px;
-    cursor: pointer;
-  }
   
   .pagination button.active {
     font-weight: bold;
     background-color: #007bff;
     color: white;
   }
+
+  .page-info{
+    background-color: rgba(0, 0, 0, 0.219);
+    border-radius: 50px;
+    margin: 0 5px;
+    padding: 10px;
+  }
   
   .pagination button:disabled {
     cursor: not-allowed;
     opacity: 0.5;
+  }
+
+  
+
+  .btn__pag{
+    border: 2px solid rgba(160, 0, 0, 0.363);
+    border-radius: 50px;
+    margin: 0 5px;
+    padding: 10px;
   }
   
 
@@ -49,3 +61,5 @@
         min-width: 40px; /* Ancho mínimo para los botones */
     }
 }
+
+
