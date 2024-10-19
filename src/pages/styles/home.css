@@ -16,3 +16,9 @@
     align-items: center;
     justify-content: center;
 }
+
+.login__button{
+    border-radius: 20px;
+    border: 1px solid red;
+    padding: 0.4em;
+}
