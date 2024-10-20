@@ -471,7 +471,10 @@ box-shadow: inset -50px 50px 98px #915291,
     height: 280px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 50px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 26px -18px inset;
     text-transform:capitalize; 
+    box-sizing: border-box;
 }
+
+
 
 .pokecard:hover {
     cursor: pointer;
@@ -650,11 +653,6 @@ box-shadow: inset -50px 50px 98px #915291,
         justify-content: center;
     }
 
-    .pokemon__footer {
-        display: flex;
-        width: 100%;
-    }
-
     .pokemon_list_type {
         display: flex;               
         justify-content: center;     
@@ -670,26 +668,5 @@ box-shadow: inset -50px 50px 98px #915291,
         padding: 0em 0.5em 0em 0.5em;
     }
 
-    .stat__pokemon {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        gap: 3em;
-    }
-
-    .poke__name_stats {
-        font-size: 12px;
-    }
-
-    .pokemon_stats {
-        display: flex;
-        flex-direction: column;
-        max-width: 250px;
-    }
-
-    .number__stats {
-        font-weight: bold;
-        font-size: 12px;
-    }
+  
 }

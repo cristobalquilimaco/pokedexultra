@@ -60,9 +60,7 @@ const Pokedex = () => {
 
   return (
     <div className="search__pokemon">
-
       <h1>Bienvenido! Busca tu Pokémon</h1>
-  
       <form onSubmit={handleSubmit}>
         <input ref={searchPokemon} type="text" />
         <button type="submit">Search</button>
