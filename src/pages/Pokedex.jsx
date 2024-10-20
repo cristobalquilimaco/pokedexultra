@@ -4,7 +4,7 @@ import PokeContainer from "../components/Pokedex/PokeContainer";
 import "./styles/pokedex.css";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-import PokeSlider from "../components/Pokedex/PokeSlider";
+
 
 
 const Pokedex = () => {
@@ -60,7 +60,7 @@ const Pokedex = () => {
 
   return (
     <div className="search__pokemon">
-       <PokeSlider pokemons={pokemons?.results || []} />
+
       <h1>Bienvenido! Busca tu Pokémon</h1>
   
       <form onSubmit={handleSubmit}>
