@@ -8,15 +8,15 @@ const PokeContainer = ({ pokemons }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 10;
 
-  // Calcular el índice de inicio y fin
+
   const indexOfLastPokemon = currentPage * itemsPerPage;
   const indexOfFirstPokemon = indexOfLastPokemon - itemsPerPage;
   const currentPokemons = pokemons.slice(indexOfFirstPokemon, indexOfLastPokemon);
 
-  // Cambiar de página
+
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
-  // Número total de páginas
+
   const totalPages = Math.ceil(pokemons.length / itemsPerPage);
 
   return (

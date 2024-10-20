@@ -10,6 +10,8 @@ const Pokecard = ({ url }) => {
 
     useEffect(() => {
         getPokemonById();
+        console.log();
+        
     }, [getPokemonById]);
 
     const navigate = useNavigate()

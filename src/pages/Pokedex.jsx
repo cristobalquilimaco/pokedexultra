@@ -1,10 +1,11 @@
 import { useEffect, useRef, useState } from "react";
 import useFetch from "../hooks/UseFetch";
-
 import PokeContainer from "../components/Pokedex/PokeContainer";
 import "./styles/pokedex.css";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import PokeSlider from "../components/Pokedex/PokeSlider";
+
 
 const Pokedex = () => {
   const [selectValue, setSelectValue] = useState("all-pokemons");
@@ -12,7 +13,10 @@ const Pokedex = () => {
   const url = "https://pokeapi.co/api/v2/pokemon?limit=100&offset=0";
   const [pokemons, getAllPokemons, hasError, setPokemons] = useFetch(url);
   const urlTypes = "https://pokeapi.co/api/v2/type";
-  const [types, getAllPokemonsTypes, hasErrorTypes] = useFetch(urlTypes);
+  const [types, getAllPokemonsTypes, hasErrorTypes] = useFetch(urlTypes)
+
+  
+  
 
   useEffect(() => {
     if (selectValue === "all-pokemons") {
@@ -27,7 +31,9 @@ const Pokedex = () => {
         })
         .catch(err => console.log(err));
     }
-  }, [selectValue, getAllPokemons, setPokemons]);
+
+    
+  }, [selectValue, setPokemons, getAllPokemons]);
 
   useEffect(() => {
     getAllPokemonsTypes();
@@ -50,9 +56,11 @@ const Pokedex = () => {
     return <p>Error al cargar los datos.</p>;
   }
 
+  
+
   return (
     <div className="search__pokemon">
-      
+       <PokeSlider pokemons={pokemons?.results || []} />
       <h1>Bienvenido! Busca tu Pokémon</h1>
   
       <form onSubmit={handleSubmit}>

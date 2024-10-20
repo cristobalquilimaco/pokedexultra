@@ -3,7 +3,7 @@ import useFetch from "../hooks/UseFetch";
 import { useEffect, useState } from "react";
 import ErrorPage from "./ErrorPage";
 import "../components/Pokedex/PokeCard"
-import PokedexNameDescription from "../components/PokedexName.jsx/PokedexNameDescription";
+import PokedexNameDescription from "../components/PokedexName.jsx/PokedexNameDescription.jsx";
 
 const PokedexName = () => {
   const { name } = useParams();
@@ -18,6 +18,8 @@ const PokedexName = () => {
         const response = await fetch(speciesUrl);
         const data = await response.json();
         setSpeciesData(data);
+      
+        
       }
     };
 

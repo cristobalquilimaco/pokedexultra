@@ -4,7 +4,7 @@ import { useState } from "react"
 
 const useFetch = (url) => {
 
-    const[infoApi, setInfoApi] = useState()
+    const[infoApi, setInfoApi] = useState(null)
     const[hasError, setHasError] = useState(false)
 
 
