@@ -2,14 +2,15 @@
     border-radius: 8px; /* Bordes redondeados */
     color: #fff; /* Color del texto */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
-    max-width: 250px;
+    max-width: 230px;
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    height: 480px;
-    background: lightgrey;
+    justify-content: flex-start;
+    align-items: center;
+    height: 410px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 50px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 26px -18px inset;
+    text-transform:capitalize; 
 }
 
 
@@ -337,26 +338,182 @@ box-shadow: inset -50px 50px 98px #915291,
 }
 
 
+/* TYPE BORDER */
+
+/* Tipos de Pokémon con borde */
+
+.border-normal {
+    border: 2px solid #5e5d38; /* Normal */
+}
+
+.border-fire {
+    border: 2px solid #FBAE24; /* Fuego */
+}
+
+.border-water {
+    border: 2px solid #A4C8E1; /* Agua */
+}
+
+.border-electric {
+    border: 2px solid #F6D02F; /* Eléctrico */
+}
+
+.border-grass {
+    border: 2px solid #7AC74C; /* Planta */
+}
+
+.border-ice {
+    border: 2px solid #96D9D6; /* Hielo */
+}
+
+.border-fighting {
+    border: 2px solid #C22E28; /* Lucha */
+}
+
+.border-poison {
+    border: 2px solid #A33EA1; /* Veneno */
+}
+
+.border-ground {
+    border: 2px solid #E2BF7D; /* Tierra */
+}
+
+.border-flying {
+    border: 2px solid #A98FF3; /* Volador */
+}
+
+.border-psychic {
+    border: 2px solid #F85888; /* Psíquico */
+}
+
+.border-bug {
+    border: 2px solid #A6B91A; /* Bicho */
+}
+
+.border-rock {
+    border: 2px solid #B6A54E; /* Roca */
+}
+
+.border-ghost {
+    border: 2px solid #735797; /* Fantasma */
+}
+
+.border-dragon {
+    border: 2px solid #6F35FC; /* Dragón */
+}
+
+.border-dark {
+    border: 2px solid #705848; /* Siniestro */
+}
+
+.border-fairy {
+    border: 2px solid #943067; /* Hada */
+}
+
+/* Tipos con bordes oscuros */
+.border-normal-dark {
+    border: 2px solid #7E7B5C; /* Normal oscuro */
+}
+
+.border-fire-dark {
+    border: 2px solid #9A6A1C; /* Fuego oscuro */
+}
+
+.border-water-dark {
+    border: 2px solid #2A4A70; /* Agua oscuro */
+}
+
+.border-electric-dark {
+    border: 2px solid #A48B10; /* Eléctrico oscuro */
+}
+
+.border-grass-dark {
+    border: 2px solid #4E6B33; /* Planta oscuro */
+}
+
+.border-ice-dark {
+    border: 2px solid #6C8E8C; /* Hielo oscuro */
+}
+
+.border-fighting-dark {
+    border: 2px solid #9A1F1B; /* Lucha oscuro */
+}
+
+.border-poison-dark {
+    border: 2px solid #7B2C7C; /* Veneno oscuro */
+}
+
+.border-ground-dark {
+    border: 2px solid #B59D53; /* Tierra oscuro */
+}
+
+.border-flying-dark {
+    border: 2px solid #7C6D93; /* Volador oscuro */
+}
+
+.border-psychic-dark {
+    border: 2px solid #E74773; /* Psíquico oscuro */
+}
+
+.border-bug-dark {
+    border: 2px solid #7C9A1C; /* Bicho oscuro */
+}
+
+.border-rock-dark {
+    border: 2px solid #9B7F37; /* Roca oscuro */
+}
+
+.border-ghost-dark {
+    border: 2px solid #513C6D; /* Fantasma oscuro */
+}
+
+.border-dragon-dark {
+    border: 2px solid #5D28C1; /* Dragón oscuro */
+}
+
+.border-dark-dark {
+    border: 2px solid #4A3B32; /* Siniestro oscuro */
+}
+
+.border-fairy-dark {
+    border: 2px solid #B56985; /* Hada oscuro */
+}
+
+.pokemon_info{
+    width: 100%;
+
+}
+
+
 .poke_card_img{
-    width: 250px;
+    width: 200px;
     position: relative;
     z-index: 1;
 }
 
 .pokebol_img{
     position: absolute;
-    width: 250px;
+    width: 200px;
     opacity: 0.4;
 }
 
 .pokecard_name {
     display: inline-flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; /* Centra horizontalmente */
+    justify-content: center; /* Centra verticalmente */
     border-radius: 0 30px 30px 0;
-    padding: 0 10px;
-    height: 30px;
+    padding: 0 12px;
+    height: 28px;
+    margin-bottom: 10px;
 }
+
+.name_text {
+    font-size: 18px;
+    margin: 0; /* Elimina márgenes */
+    text-align: center; /* Asegura que el texto esté centrado */
+}
+
 
 
 .poke_header{
@@ -366,14 +523,47 @@ box-shadow: inset -50px 50px 98px #915291,
     justify-content: center;
 }
 
-.name_text{
-    font-size: 22px;
-}
 
 .pokemon_list_type{
+    width: 100%;
     display: flex;
     gap: 2em;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
 }
+
+
+
+.pokemon__footer{
+    display: flex;
+    width: 100%;
+}
+
+.pokemon_list_type {
+    display: flex;               
+    justify-content: center;     
+    align-items: center;          
+    list-style: none;             
+    padding: 0;                  
+    margin: 0;
+    font-size: 12px;               
+}
+
+.pokemon_list_type li {
+    margin: 0 5px;              
+}
+
+.poke__type{
+    border-radius: 20px;
+    padding: 0em 0.5em 0em 0.5em ;
+
+}
+
+
 
 .stat__pokemon{
     display: flex;
@@ -389,13 +579,6 @@ box-shadow: inset -50px 50px 98px #915291,
     max-width: 250px;
 }
 
-.pokemon__footer{
-    display: flex;
-    width: 100%;
-}
-
-
-.poke__type{
-    border-radius: 20px;
-    padding: 0em 0.5em 0em 0.5em ;
+.number__stats{
+    font-weight: bold;
 }
