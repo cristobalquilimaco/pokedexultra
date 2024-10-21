@@ -28,7 +28,7 @@ const Pokecard = ({ url }) => {
         <div onClick={handleNavigate}  className={`pokecard  ${backgroundClass}`}> {/* Aplica el fondo aquí */}
             <header className="poke_header">
                 <img className="poke_card_img" src={pokemon?.sprites?.other.home.front_default} alt={pokemon?.name} />
-                <img className="pokebol_img" src={pokebol} alt="" />
+                <img className="pokebol_img" src={pokebol} alt="pokeball" />
             </header>
             <section className="pokemon_info">
                 <article className={`pokecard_name ${darkBackgroundClass}`}>

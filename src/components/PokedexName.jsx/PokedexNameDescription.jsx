@@ -11,6 +11,7 @@ import { Link } from 'react-router-dom';
 const PokedexNameDescription = ({ speciesData, pokemon }) => {
   const [activeTab, setActiveTab] = useState('description');
   const primaryType = pokemon?.types[0]?.type.name;
+  const backgroundClass = pokemon?.types[0]?.type.name ? `type-${pokemon.types[0].type.name}` : '';
 
   return (
     <section className='principal__poke_page'>
@@ -24,46 +25,46 @@ const PokedexNameDescription = ({ speciesData, pokemon }) => {
 </button>
       </Link>
 
-      <div className={`pokedex-container ${primaryType ? `${primaryType}-background` : ''}`}>
-        {pokemon?.sprites?.other?.home?.front_default ? (
-          <img className='poke__img__info' src={pokemon.sprites.other.home.front_default} alt={pokemon.name} />
-        ) : (
-          <img src="placeholder-image-url" alt="Imagen" />
-        )}
-        <h1 className='poke__name'>{pokemon?.name}</h1>
-        <ul className="pokemon_list_type">
-          {pokemon?.types.map(typeInfo => (
+      <div className={`pokedex-container ${backgroundClass}`}>
+    {pokemon?.sprites?.other?.home?.front_default ? (
+        <img className='poke__img__info' src={pokemon.sprites.other.home.front_default} alt={pokemon.name} />
+    ) : (
+        <img src="placeholder-image-url" alt="Imagen" />
+    )}
+    <h1 className='poke__name'>{pokemon?.name}</h1>
+    <ul className="pokemon_list_type">
+        {pokemon?.types.map(typeInfo => (
             <li key={typeInfo.type.url}>{typeInfo.type.name}</li>
-          ))}
-        </ul>
-        {speciesData && (
-          <div className='principal__poke-container'>
+        ))}
+    </ul>
+    {speciesData && (
+        <div className='principal__poke-container'>
             <section className='button__section'>
-              <button
-                className={`poke__button pokemon-type-${primaryType}`}
-                onClick={() => setActiveTab('description')}
-              >
-                Description
-              </button>
-              <button className={`poke__button pokemon-type-${primaryType}`} onClick={() => setActiveTab('stats')}>
-                Stats
-              </button>
-              <button className={`poke__button pokemon-type-${primaryType}`} onClick={() => setActiveTab('moves')}>
-                Moves
-              </button>
+                <button
+                    className={`poke__button pokemon-type-${primaryType}`}
+                    onClick={() => setActiveTab('description')}
+                >
+                    Description
+                </button>
+                <button className={`poke__button pokemon-type-${primaryType}`} onClick={() => setActiveTab('stats')}>
+                    Stats
+                </button>
+                <button className={`poke__button pokemon-type-${primaryType}`} onClick={() => setActiveTab('moves')}>
+                    Moves
+                </button>
             </section>
             {activeTab === 'description' && (
-              <PokeDescription flavorTextEntries={speciesData.flavor_text_entries} />
+                <PokeDescription flavorTextEntries={speciesData.flavor_text_entries} />
             )}
             {activeTab === 'stats' && (
-              <PokeStats stats={pokemon?.stats} />
+                <PokeStats stats={pokemon?.stats} />
             )}
             {activeTab === 'moves' && (
-              <PokeMoves moves={pokemon?.moves} primaryType={primaryType} />
+                <PokeMoves moves={pokemon?.moves} primaryType={primaryType} />
             )}
-          </div>
-        )}
-      </div>
+        </div>
+    )}
+</div>
     </section>
   );
 };
