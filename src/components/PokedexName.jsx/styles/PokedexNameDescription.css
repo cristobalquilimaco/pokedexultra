@@ -172,23 +172,30 @@
 
 /* ESTILOS DE COMPONENTE */
 
-.poke__name{
+.poke__name {
     text-transform: capitalize;
 }
 
 .img__poke-header {
+    overflow: hidden;
     position: relative; 
-    width: 350px; 
-    height: 350px; 
+    width: 100%; 
+    height: 350px; /* Establece una altura fija para el contenedor */
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    clip-path: polygon(0% 0%, 100% 0%, 100% 92%, 76% 92%, 51% 100%, 27% 91%, 0 90%);
 }
 
 .pokebol__img__header {
     position: absolute;
-    top: 0; 
-    left: 0; 
-    width: 100%; 
-    height: 100%; 
+    top: 50%; /* Mueve la Pokébola al centro vertical */
+    left: 50%; /* Mueve la Pokébola al centro horizontal */
+    transform: translate(-50%, -50%); /* Ajusta la posición para centrarla */
+    width: 350px; 
+    height: 350px; /* Asegúrate de que tenga la misma altura que la imagen del Pokémon */
     z-index: 1;
+    opacity: 0.3;
 }
 
 .poke__img__info {
@@ -196,7 +203,9 @@
     height: 350px;
     position: relative; 
     z-index: 2; 
+    display: block; /* Asegúrate de que se comporte como un bloque para centrarse */
 }
+
 
 
 .pokedex__name{
@@ -235,10 +244,11 @@
 }
 
 .principal__poke_page{
-
+    width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 .principal__poke-container{
@@ -274,6 +284,7 @@
     list-style: none; /* Asegúrate de eliminar el estilo de lista */
     padding: 0; /* Elimina el padding */
     width: 100%;
+    max-width: 710px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -291,7 +302,7 @@
     align-items: center; /* Alinea verticalmente el contenido */
     justify-content: center;
   /* Espacia el nombre, barra y valor */
-    width: 70%; /* Asegúrate de que ocupe todo el ancho */
+    width: 100%; /* Asegúrate de que ocupe todo el ancho */
     margin-bottom: 10px; /* Espacio entre las estadísticas */
 }
 
@@ -322,6 +333,7 @@
 /* MOVES */
 
 .moves__list{
+    overflow: hidden;
     background-color: #272b3309;
     width: 100%;
     max-width: 710px;
@@ -362,6 +374,7 @@
     position: absolute;
     top: 80px;
     left: 610px;
+    z-index: 3;
   }
   
   .svgIcon {
@@ -380,6 +393,7 @@
     transition-duration: 0.3s;
     background-color: rgb(197, 3, 3);
     align-items: center;
+    
   }
   
   .button__back:hover .svgIcon {

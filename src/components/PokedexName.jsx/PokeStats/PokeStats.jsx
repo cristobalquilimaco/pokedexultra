@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import './styles/pokeStats.css'; // Asegúrate de importar el archivo CSS
-import "./styles/PokedexNameDescription.css";
+import "../styles/PokedexNameDescription.css"; 
 
 const PokeStats = ({ stats }) => {
     return (

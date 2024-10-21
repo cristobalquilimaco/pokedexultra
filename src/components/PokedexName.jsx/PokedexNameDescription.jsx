@@ -2,7 +2,7 @@ import { useState } from 'react';
 import PropTypes from 'prop-types';
 import "./styles/PokedexNameDescription.css"; 
 import "../Pokedex/styles/pokecard.css";
-import PokeDescription from './PokeDescription/Pokedescription.jsx';
+import PokeDescription from './PokeDescription/Pokedescription';
 import PokeStats from './PokeStats/PokeStats';
 import PokeMoves from './PokeMoves.jsx/PokeMoves';
 import { Link } from 'react-router-dom';
