@@ -64,7 +64,7 @@ const Pokedex = () => {
       <p className="pokedex__description">Dive into the fascinating world of Pokémon with our complete catalog. From the most iconic to the rarest, explore detailed descriptions, special abilities, and tips for capturing them. Perfect for trainers of all levels, this catalog is your ideal companion on the journey to becoming a Pokémon Master. Dare to meet your future travel companions!</p>
       <form className="poke__form" onSubmit={handleSubmit}>
         <input className="search__input" ref={searchPokemon} type="text" />
-        <button type="submit">Search</button>
+        <button className="search__btn" type="submit">Search</button>
         <select onChange={handleChangeType}>
           <option value="all-pokemons">All Pokemons</option>
           {types?.results.map(typeInfo => (

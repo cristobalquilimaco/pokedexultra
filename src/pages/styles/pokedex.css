@@ -49,6 +49,7 @@
     align-items: center;
     justify-content: space-around;
     gap: 0.5em;
+    width: 90%;
 }
 
 .search__input{
@@ -56,6 +57,10 @@
     border-radius: 20px;
     padding: 0 10px;
     width: 100%;
+}
+
+.search__btn{
+    border: 1px solid red;
 }
 
 @media (min-width: 800px) {
