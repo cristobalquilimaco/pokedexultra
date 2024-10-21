@@ -14,6 +14,33 @@
     justify-content: center;
 }
 
+.pokedex__title{
+    font-size: 20px;
+    text-align: center;
+}
+
+.pokedex__title {
+    font-size: 1.5rem; 
+    font-weight: 600; 
+    color: #333; 
+    text-align: center; 
+    margin-bottom: 10px; 
+    text-transform: uppercase;
+    margin-top: 20px; 
+}
+
+.pokedex__description {
+    font-size: 1rem; 
+    color: #555; 
+    line-height: 1.5; 
+    text-align: center; 
+    max-width: 600px; 
+    margin: 0 auto; 
+    padding: 0 15px; 
+    margin-bottom: 50px;
+}
+
+
 @media (min-width: 800px) {
     .poke_container_class{
         width: 70%;

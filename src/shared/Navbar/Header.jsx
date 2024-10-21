@@ -10,7 +10,6 @@ const {name, avatar} = useSelector(states => states.trainerName);
 
   return (
 <header className="navbar">
-
     <Link className="logo__section" to={"/pokedex"}>
         <img className="img__logo" src={logo} alt="" />
         <h1 className="logo">POKEDEX</h1></Link>

@@ -49,3 +49,9 @@ header {
     aspect-ratio: 1;
     margin-left: 10px; 
 }
+
+@media (min-width: 800px) {
+    .navbar {
+        gap: 19em; 
+    }
+}
