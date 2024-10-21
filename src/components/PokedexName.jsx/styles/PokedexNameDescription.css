@@ -386,6 +386,8 @@
     .button__back {
         top: 80px;
         left: 20px;
+        width: 40px;
+        height: 40px;
       }
 
       .svgIcon {
@@ -393,4 +395,20 @@
         transition-duration: 0.3s;
         transform: rotateZ(-90deg); /* Rota hacia la izquierda */
     }
+
+    .button__back:hover::before {
+        font-size: 12px;
+      }
+
+      .button__back:hover {
+        width: 100px;
+        border-radius: 50px;
+        transition-duration: 0.3s;
+        background-color: rgb(197, 3, 3);
+        align-items: center;
+      }
+      
+
+    
+
 }
