@@ -24,6 +24,7 @@ html, body {
     height: 100%;
     font-family: Arial, sans-serif; /* Cambia la fuente si es necesario */
     line-height: 1.5;
+    margin: 0;
 }
 
 h1{
@@ -70,3 +71,30 @@ input, textarea {
 }
 
 
+/* Reset para labels */
+label {
+    display: block; /* Hace que el label ocupe toda la línea */
+    margin-bottom: 5px; /* Espacio inferior */
+    font-size: 1rem; /* Tamaño de fuente */
+    color: #333; /* Color del texto */
+}
+
+/* Reset para inputs */
+input {
+    width: 100%; /* Ocupa el 100% del ancho del contenedor */
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde suave */
+    border-radius: 4px; /* Bordes redondeados */
+    font-size: 1rem; /* Tamaño de fuente */
+    color: #333; /* Color del texto */
+    background-color: #fff; /* Color de fondo */
+    box-sizing: border-box; /* Incluye padding y border en el tamaño total */
+    margin-bottom: 15px; /* Espacio inferior */
+}
+
+/* Opcional: estilos para el foco */
+input:focus {
+    border-color: #007bff; /* Color de borde al enfocar */
+    outline: none; /* Quitar el contorno por defecto */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Sombra suave */
+}

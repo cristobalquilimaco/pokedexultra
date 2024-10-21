@@ -43,13 +43,15 @@
     text-align: justify;
 }
 
-.poke__form{
+.poke__form_dex{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
     gap: 0.5em;
-    width: 90%;
+    max-width: 90%;
+    margin: 0;
+    padding: 0;
 }
 
 .search__input{
@@ -57,6 +59,7 @@
     border-radius: 20px;
     padding: 0 10px;
     width: 100%;
+    margin: 0;
 }
 
 .search__btn{
@@ -68,6 +71,34 @@
     cursor: pointer;
 }
 
+
+/* From Uiverse.io by reshades */ 
+.button {
+    background-color: #ffffff00;
+    color: #c50707;
+    width: 4em;
+    height: 1.7em;
+    border: #ff3636 0.2em solid;
+    border-radius: 11px;
+    text-align: center;
+    transition: all 0.6s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button:hover {
+    background-color: #e00000;
+    cursor: pointer;
+    color: white;
+  }
+  
+
+  .text {
+    margin: 0 1em;
+    font-size: 15px;
+  }
+
 @media (min-width: 800px) {
     .poke_container_class{
         width: 70%;
@@ -78,3 +109,4 @@
     }
 
 }
+

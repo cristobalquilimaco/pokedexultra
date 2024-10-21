@@ -3,7 +3,7 @@ import { setTrainerName, setTrainerAvatar } from "../store/slices/trainerName.Sl
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import images from "../assets/images/images.js";
-import "../pages/styles/home.css"
+import "../pages/styles/home.css";
 
 const Home = () => {
     const [selectedAvatar, setSelectedAvatar] = useState(null);
@@ -30,29 +30,44 @@ const Home = () => {
     };
 
     return (
-        <div className="home__page">
+        <section className="home__container">
+                    <div className="home__page">
             <h1>POKEDEX</h1>
             <h2>Hi Trainer</h2>
             <h3>Press Star</h3>
-            <form className="poke__form" onSubmit={handleSubmit}>
+            <div className="login__section">
+            <form className="poke__form_login" onSubmit={handleSubmit}>
+                <div>
                 <input className="name__input" ref={nameRef} type="text" placeholder="Enter your name" />
+                </div>
+               
                 <div className="avatar__section">
                     <h4>Select an Avatar:</h4>
                     {Object.entries(images).map(([key, src]) => (
-                        <label key={key}>
-                            <input
+                        <label className={`label__avatar ${selectedAvatar === src ? 'active' : ''}`} key={key}>
+                            <input className="input__avatar"
                                 type="radio"
                                 name="avatar"
                                 value={key}
                                 onChange={() => setSelectedAvatar(src)}
+                                style={{ display: 'none' }} // Oculta el input
                             />
                             <img className="avatar" src={src} alt={key} style={{ width: 50, height: 50 }} />
                         </label>
                     ))}
                 </div>
-                <button className="login__button" type="submit">Catch them all!</button>
+                <div className="buttons">
+                    <button className="btn">
+                        <span></span>
+                        <p data-start="good luck!" data-text="start!" data-title="new game"></p>
+                    </button>
+                </div>
             </form>
+            </div>
+            
         </div>
+        </section>
+
     );
 };
 
