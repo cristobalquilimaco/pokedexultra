@@ -1,44 +1,46 @@
-.navbar{
+header {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.navbar {
+    background-color: red;
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; 
 }
 
-.logo__section{
-    width: 100%;
+.logo__section {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    margin-top: 5px;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
 }
 
-.img__logo{
+.img__logo {
     width: 60px;
 }
 
-.logo{
+.logo {
     font-size: 20px;
-    font-family: "Rubik Mono One", monospace;
-    color: rgba(158, 43, 43, 0.897);
+    margin-left: 10px; 
 }
 
-.user__info{
+.user__info {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-end;
-    width: 100%;
-    margin-right: 0.5em;
+
 }
 
-.name__trainer{
-    max-width: 100%;
-}
-
-.avatar{
+.avatar {
     width: 30px;
     border-radius: 50%;
     border: 2px solid red;  
     aspect-ratio: 1;
+    margin-left: 10px; 
 }
