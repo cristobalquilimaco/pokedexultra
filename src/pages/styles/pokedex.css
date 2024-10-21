@@ -12,6 +12,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    margin-top: 2em;
 }
 
 .pokedex__title{
@@ -40,6 +41,11 @@
     margin-bottom: 50px;
 }
 
+.search__input{
+    border: 1px solid red;
+    border-radius: 20px;
+    padding: 0 10px;
+}
 
 @media (min-width: 800px) {
     .poke_container_class{

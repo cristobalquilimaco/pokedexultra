@@ -28,6 +28,8 @@ header {
 
 .logo {
     font-size: 20px; 
+    font-weight: 900;
+    color: red;
 }
 
 .user__info {
@@ -40,6 +42,7 @@ header {
 
 .name__trainer{
     text-transform: capitalize;
+    font-weight: 600;
 }
 
 .avatar {

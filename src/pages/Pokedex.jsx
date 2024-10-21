@@ -62,8 +62,8 @@ const Pokedex = () => {
     <div className="search__pokemon">
       <h1 className="pokedex__title">Pokémon Catalog: The Ultimate Guide for Trainers</h1>
       <p className="pokedex__description">Dive into the fascinating world of Pokémon with our complete catalog. From the most iconic to the rarest, explore detailed descriptions, special abilities, and tips for capturing them. Perfect for trainers of all levels, this catalog is your ideal companion on the journey to becoming a Pokémon Master. Dare to meet your future travel companions!</p>
-      <form onSubmit={handleSubmit}>
-        <input ref={searchPokemon} type="text" />
+      <form className="poke__form" onSubmit={handleSubmit}>
+        <input className="search__input" ref={searchPokemon} type="text" />
         <button type="submit">Search</button>
         <select onChange={handleChangeType}>
           <option value="all-pokemons">All Pokemons</option>
