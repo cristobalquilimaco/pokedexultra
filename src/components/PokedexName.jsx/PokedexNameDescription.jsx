@@ -2,10 +2,11 @@ import { useState } from 'react';
 import PropTypes from 'prop-types';
 import "./styles/PokedexNameDescription.css"; 
 import "../Pokedex/styles/pokecard.css";
-import PokeDescription from './PokeDescription/Pokedescription';
+import PokeDescription from './PokeDescription/Pokedescription.jsx';
 import PokeStats from './PokeStats/PokeStats';
 import PokeMoves from './PokeMoves.jsx/PokeMoves';
 import { Link } from 'react-router-dom';
+import pokebol from '../../assets/images/pokebol.png';
 
 
 const PokedexNameDescription = ({ speciesData, pokemon }) => {
@@ -25,12 +26,17 @@ const PokedexNameDescription = ({ speciesData, pokemon }) => {
 </button>
       </Link>
 
-      <div className={`pokedex-container ${backgroundClass}`}>
+      <div className="pokedex-container">
+        <div className={`img__poke-header ${backgroundClass}`} >
+        <img className="pokebol__img__header" src={pokebol} alt="pokeball" />
     {pokemon?.sprites?.other?.home?.front_default ? (
+      
         <img className='poke__img__info' src={pokemon.sprites.other.home.front_default} alt={pokemon.name} />
     ) : (
         <img src="placeholder-image-url" alt="Imagen" />
     )}
+        </div>
+
     <h1 className='poke__name'>{pokemon?.name}</h1>
     <ul className="pokemon_list_type">
         {pokemon?.types.map(typeInfo => (

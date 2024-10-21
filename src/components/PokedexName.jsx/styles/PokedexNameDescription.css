@@ -176,9 +176,28 @@
     text-transform: capitalize;
 }
 
-.poke__img__info{
-    width: 350px;
+.img__poke-header {
+    position: relative; 
+    width: 350px; 
+    height: 350px; 
 }
+
+.pokebol__img__header {
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    z-index: 1;
+}
+
+.poke__img__info {
+    width: 350px; 
+    height: 350px;
+    position: relative; 
+    z-index: 2; 
+}
+
 
 .pokedex__name{
     width: 100%;
@@ -207,7 +226,7 @@
 }
 
 .pokedex-container{
-
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items:center ;
@@ -236,48 +255,51 @@
 .poke__description{
     background-color: #272b3307;
     width: 100%;
+    max-width: 710px;
     display: flex;
     flex-direction: column;
     gap: 0.4em;
     margin-top: 20px;
     border-radius: 10px;
     padding: 1em;
-
 }
 
 
 
 /* STATS */
 
+
+
 .stast__info {
     list-style: none; /* Asegúrate de eliminar el estilo de lista */
     padding: 0; /* Elimina el padding */
-    width: 100%; /* Asegúrate de que ocupe todo el ancho */
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     margin: 0.5em;
-    background-color: #272b3309;
+    background-color: #33272709;
     border-radius: 20px;
     padding: 1em;
+    width: 710px;
 }
 
 .poke__stats {
     display: flex;
     flex-direction: row;
     align-items: center; /* Alinea verticalmente el contenido */
-    justify-content: space-between; /* Espacia el nombre, barra y valor */
-    width: 100%; /* Asegúrate de que ocupe todo el ancho */
+    justify-content: center;
+  /* Espacia el nombre, barra y valor */
+    width: 70%; /* Asegúrate de que ocupe todo el ancho */
     margin-bottom: 10px; /* Espacio entre las estadísticas */
-    
 }
 
 .progress-container {
     background: #e0e0e0; /* Color de fondo de la barra */
     border-radius: 5px;
     overflow: hidden;
-    width: 100%; /* Ancho fijo para la barra */
+    width: 40%; /* Ancho fijo para la barra */
     height: 20px; /* Altura de la barra */
     margin: 0 10px; /* Espaciado a los lados de la barra */
 }
@@ -290,7 +312,7 @@
 
 .stat__name{
     margin: 0;
-    width: 60%;
+    width: 25%;
 }
 
 .stat__value{
@@ -301,7 +323,8 @@
 
 .moves__list{
     background-color: #272b3309;
-    width: 95%;
+    width: 100%;
+    max-width: 710px;
     display: flex;
     align-items: center;
     justify-content: space-between;
