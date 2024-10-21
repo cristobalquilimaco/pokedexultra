@@ -61,6 +61,11 @@
 
 .search__btn{
     border: 1px solid red;
+    border-radius: 20px;
+    padding: 0 1em;
+}
+.search__btn:hover{
+    cursor: pointer;
 }
 
 @media (min-width: 800px) {
