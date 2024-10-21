@@ -6,11 +6,11 @@ header {
 }
 
 .navbar {
-    background-color: red;
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: space-around;
+    gap: 10em; 
 }
 
 .logo__section {
@@ -19,6 +19,7 @@ header {
     justify-content: center;
     flex-direction: row;
     align-items: center;
+
 }
 
 .img__logo {
@@ -26,19 +27,23 @@ header {
 }
 
 .logo {
-    font-size: 20px;
-    margin-left: 10px; 
+    font-size: 20px; 
 }
 
 .user__info {
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-right: 15px;
 
 }
 
+.name__trainer{
+    text-transform: capitalize;
+}
+
 .avatar {
-    width: 30px;
+    width: 40px;
     border-radius: 50%;
     border: 2px solid red;  
     aspect-ratio: 1;
