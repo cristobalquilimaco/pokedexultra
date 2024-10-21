@@ -4,6 +4,7 @@ import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import images from "../assets/images/images.js";
 import "../pages/styles/home.css";
+import pokemonLogo from "../assets/images/pokemonLogo.png"
 
 const Home = () => {
     const [selectedAvatar, setSelectedAvatar] = useState(null);
@@ -32,17 +33,17 @@ const Home = () => {
     return (
         <section className="home__container">
                     <div className="home__page">
-            <h1>POKEDEX</h1>
+            <img className="pokemon_logo" src={pokemonLogo} alt="" />
             <h2>Hi Trainer</h2>
-            <h3>Press Star</h3>
+            <h3 className="description_login">Don´t miss the chance to explore the amazing world of Pokémon!</h3>
             <div className="login__section">
             <form className="poke__form_login" onSubmit={handleSubmit}>
                 <div>
                 <input className="name__input" ref={nameRef} type="text" placeholder="Enter your name" />
                 </div>
-               
+                <h4 >Select an Avatar:</h4>
                 <div className="avatar__section">
-                    <h4>Select an Avatar:</h4>
+                    
                     {Object.entries(images).map(([key, src]) => (
                         <label className={`label__avatar ${selectedAvatar === src ? 'active' : ''}`} key={key}>
                             <input className="input__avatar"

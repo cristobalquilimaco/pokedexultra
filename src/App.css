@@ -47,6 +47,8 @@ a {
 }
 
 img {
+    margin: 0;
+    padding: 0;
     max-width: 100%; /* Hace que las imágenes sean responsivas */
     height: auto; /* Mantiene la proporción */
 }
