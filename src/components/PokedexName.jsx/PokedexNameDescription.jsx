@@ -5,6 +5,7 @@ import "../Pokedex/styles/pokecard.css";
 import PokeDescription from './PokeDescription/Pokedescription';
 import PokeStats from './PokeStats/PokeStats';
 import PokeMoves from './PokeMoves.jsx/PokeMoves';
+import { Link } from 'react-router-dom';
 
 
 const PokedexNameDescription = ({ speciesData, pokemon }) => {
@@ -13,11 +14,21 @@ const PokedexNameDescription = ({ speciesData, pokemon }) => {
 
   return (
     <section className='principal__poke_page'>
+      <Link to={"/pokedex"} >
+      <button className="button__back">
+  <svg className="svgIcon" viewBox="0 0 384 512">
+    <path
+      d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
+    ></path>
+  </svg>
+</button>
+      </Link>
+
       <div className={`pokedex-container ${primaryType ? `${primaryType}-background` : ''}`}>
         {pokemon?.sprites?.other?.home?.front_default ? (
           <img className='poke__img__info' src={pokemon.sprites.other.home.front_default} alt={pokemon.name} />
         ) : (
-          <img src="placeholder-image-url" alt="Placeholder" />
+          <img src="placeholder-image-url" alt="Imagen" />
         )}
         <h1 className='poke__name'>{pokemon?.name}</h1>
         <ul className="pokemon_list_type">
