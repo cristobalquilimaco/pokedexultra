@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import "./styles/PokedexNameDescription.css"; 
 import "../Pokedex/styles/pokecard.css";
@@ -13,6 +13,11 @@ const PokedexNameDescription = ({ speciesData, pokemon }) => {
   const [activeTab, setActiveTab] = useState('description');
   const primaryType = pokemon?.types[0]?.type.name;
   const backgroundClass = pokemon?.types[0]?.type.name ? `type-${pokemon.types[0].type.name}` : '';
+
+  useEffect(() => {
+    
+  }, [])
+  
 
   return (
     <section className='card__principal principal__poke_page'>
@@ -29,7 +34,7 @@ const PokedexNameDescription = ({ speciesData, pokemon }) => {
       <div className="pokedex-container">
         <div className={`img__poke-header ${backgroundClass}`} >
         <img className="pokebol__img__header" src={pokebol} alt="pokeball" />
-    {pokemon?.sprites?.other?.home?.front_default ? (
+    {pokemon?.sprites.other.home?.front_default ? (
       
         <img className='poke__img__info' src={pokemon.sprites.other.home.front_default} alt={pokemon.name} />
     ) : (

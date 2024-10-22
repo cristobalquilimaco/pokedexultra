@@ -1,7 +1,21 @@
-
 import PropTypes from 'prop-types';
+import { useEffect, useState } from 'react';
+import LoadingPage from '../../../pages/Loading/LoadingPage';
+
 
 const PokeDescription = ({ flavorTextEntries }) => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    if (flavorTextEntries.length > 0) {
+      setLoading(false); // Cambia a false si hay entradas de texto
+    }
+  }, [flavorTextEntries]);
+
+  if (loading) {
+    return <LoadingPage />;
+  }
+
   return (
     <div className='poke__description'>
       {flavorTextEntries

@@ -2,7 +2,7 @@ import { Route, Routes } from "react-router-dom"
 import Home from "./pages/Home"
 import Pokedex from "./pages/Pokedex"
 import ProtectedRoutes from "./pages/ProtectedRoutes"
-import "../src/app.css"
+import "../src/app.css";
 import PokedexName from "./pages/PokedexName"
 import Navbar from "./shared/Navbar/Header"
 
