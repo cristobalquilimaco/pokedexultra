@@ -177,6 +177,7 @@
 }
 
 .img__poke-header {
+    border-radius: 17px 17px 0px 0px;
     overflow: hidden;
     position: relative; 
     width: 100%; 
@@ -192,15 +193,15 @@
     top: 50%; /* Mueve la Pokébola al centro vertical */
     left: 50%; /* Mueve la Pokébola al centro horizontal */
     transform: translate(-50%, -50%); /* Ajusta la posición para centrarla */
-    width: 350px; 
-    height: 350px; /* Asegúrate de que tenga la misma altura que la imagen del Pokémon */
+    width: 300px; 
+    height: 300px; /* Asegúrate de que tenga la misma altura que la imagen del Pokémon */
     z-index: 1;
     opacity: 0.3;
 }
 
 .poke__img__info {
-    width: 350px; 
-    height: 350px;
+    width: 300px; 
+    height: 300px;
     position: relative; 
     z-index: 2; 
     display: block; /* Asegúrate de que se comporte como un bloque para centrarse */
@@ -231,24 +232,35 @@
     width: 120px;
     height: 28px;
     border-radius: 20px;
-    
 }
 
 .pokedex-container{
-    width: 100%;
+    width: 99.2%;
     display: flex;
     flex-direction: column;
     align-items:center ;
     justify-content: center;
-
+    z-index: 9;
+    margin-top: 5px;
 }
 
 .principal__poke_page{
+    margin: 2em;
+    border-radius: 50px;
     width: 50%;
+    min-width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-
+    position: relative;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 0px 13px -4px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 13px -4px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 13px -4px rgba(0,0,0,0.75);
 }
 
 .principal__poke-container{
@@ -257,6 +269,42 @@
     align-items: center;
     justify-content: center;
 }
+
+/* --------CARD-------- */
+
+.principal__poke_page::before {
+    content: '';
+    position: absolute;
+    width: 50%;
+    background-image: linear-gradient(180deg, rgb(202, 0, 0), rgb(250, 212, 0));
+    height: 300%;
+    animation: rotBGimg 10s linear infinite;
+    transition: all 0.2s linear;
+  }
+  
+  @keyframes rotBGimg {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .principal__poke_page::after {
+    content: '';
+    position: absolute;
+    background: #ffffff;
+    ;
+    inset: 5px;
+    border-radius: 15px;
+  }  
+  /* .principal__poke_page:hover:before {
+    background-image: linear-gradient(180deg, rgb(81, 255, 0), purple);
+    animation: rotBGimg 3.5s linear infinite;
+  } */
+
 
 
 /* DESCRIPTION */
@@ -357,8 +405,8 @@
 
 /* From Uiverse.io by vinodjangid07 */ 
 .button__back {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     background-color: rgb(255, 255, 255);
     border: none;
@@ -372,9 +420,9 @@
     overflow: hidden;
     position: relative;
     position: absolute;
-    top: 80px;
-    left: 610px;
-    z-index: 3;
+    top: 20px;
+    left: 20px;
+    z-index: 9999;
   }
   
   .svgIcon {
@@ -393,7 +441,7 @@
     transition-duration: 0.3s;
     background-color: rgb(197, 3, 3);
     align-items: center;
-    
+
   }
   
   .button__back:hover .svgIcon {
@@ -419,12 +467,13 @@
     transition-duration: 0.3s;
   }
   
-@media (max-width: 500px) {
+@media (max-width: 700px) {
     .button__back {
-        top: 80px;
+        top: 20px;
         left: 20px;
         width: 40px;
         height: 40px;
+        z-index: 100;
       }
 
       .svgIcon {
@@ -446,6 +495,23 @@
       }
       
 
+      .principal__poke_page{
+        width: 97%;
+        min-width: 50%;
+        margin-top: 0px;
+    }
+
+    .pokebol__img__header {
+        width: 250px; 
+        height: 250px; /* Asegúrate de que tenga la misma altura que la imagen del Pokémon */
+    }
+    
+    .poke__img__info {
+        width: 250px; 
+        height: 250px;
+    }
     
 
+
 }
+

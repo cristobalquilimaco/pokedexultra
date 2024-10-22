@@ -15,7 +15,7 @@ const PokedexNameDescription = ({ speciesData, pokemon }) => {
   const backgroundClass = pokemon?.types[0]?.type.name ? `type-${pokemon.types[0].type.name}` : '';
 
   return (
-    <section className='principal__poke_page'>
+    <section className='card__principal principal__poke_page'>
       <Link to={"/pokedex"} >
       <button className="button__back">
   <svg className="svgIcon" viewBox="0 0 384 512">

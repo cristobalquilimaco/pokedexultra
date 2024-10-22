@@ -101,7 +101,7 @@
 
 @media (min-width: 800px) {
     .poke_container_class{
-        width: 70%;
+        width: 80%;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
