@@ -79,7 +79,7 @@ const Pokedex = () => {
         <div className="search__pokemon">
             <h1 className="pokedex__title">Pokémon Catalog: The Ultimate Guide for Trainers</h1>
             <p className="pokedex__description">
-            Dive into the fascinating world of Pokémon with our complete catalog, featuring detailed profiles of every Pokémon, including their types, abilities, evolutions, and habitats. Explore the various regions, discover rare and legendary creatures, and learn about their unique characteristics and moves. Whether you´re a seasoned Trainer or a newcomer, our comprehensive guides, tips for battling, and strategies for catching them all will enhance your Pokémon journey. Join the adventure and immerse yourself in the rich lore and vibrant community surrounding this beloved franchise!...</p>
+            Dive into the fascinating world of Pokémon with our complete catalog, featuring detailed profiles of every Pokémon, including their types, abilities, evolutions, and habitats. Explore the various regions, discover rare and legendary creatures, and learn about their unique characteristics and moves. Whether you´re a seasoned Trainer or a newcomer, our comprehensive guides, tips for battling, and strategies for catching them all will enhance your Pokémon journey. Join the adventure and immerse yourself in the rich lore and vibrant community surrounding this beloved franchise!</p>
             <form className="poke__form_dex" onSubmit={handleSubmit}>
                 <input className="search__input" ref={searchPokemon} type="text" />
                 <button className="button">Search</button>
